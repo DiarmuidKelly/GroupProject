@@ -1,6 +1,6 @@
 # GroupProject
 *****************
-* Useful Links: *
+Useful Links: 
 *****************
 
 1Sheeld Android SDK and java doc:
@@ -18,7 +18,7 @@ https://1sheeld.com/1sheeld-android-sdk-is-out/
 https://play.google.com/store/apps/details?id=com.integreight.onesheeld
 
 ***********
-* Other:  *
+Other: 
 ***********
 
 For a sample of how to write commands, check lines 178-186 of the SampleAlexa code. It gives you an idea of how easy it is.
