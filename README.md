@@ -1,6 +1,8 @@
 # GroupProject
 
 Useful Links:
+
+
 1Sheeld Android SDK and java doc:
 https://github.com/Integreight/1Sheeld-Android-SDK
 https://1sheeld.com/AndroidSDK/JavaDocs/1.0.0/
