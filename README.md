@@ -17,6 +17,9 @@ https://1sheeld.com/1sheeld-android-sdk-is-out/
 1Sheeld Android app:
 https://play.google.com/store/apps/details?id=com.integreight.onesheeld
 
+Ruby Security: (interesting part here is the sessions and ssl)
+http://guides.rubyonrails.org/security.html
+
 ***********
 Other: 
 ***********
