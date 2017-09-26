@@ -1,6 +1,6 @@
 Raspberry Pi Server Running at 95.45.70.118 (Dynamic)
 
-SSH Logins:
+SSH/SFTP Logins: (default passwords passwd)
 diarmuid
 sinead
 amy
@@ -11,7 +11,9 @@ pi
 
 
 Installed packages:
-MYSQL               -password: groupwork
-PHP
-Apache2
+MYSQL              5.5.57-0+deb7u1 (Debian)       -password: groupwork
+PHP                PHP 5.4.45-0+deb7u11 (cli)
+Apache2            Apache/2.2.22 (Debian)
+ruby               2.4.1p111 (2017-03-22 revision 58053) [armv7l-linux-eabihf]
+rails              5.1.4
 
