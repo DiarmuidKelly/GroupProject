@@ -18,7 +18,5 @@ ruby               2.4.1p111 (2017-03-22 revision 58053) [armv7l-linux-eabihf]
 rails              5.1.4
 
 Using MYSQL:
-'''
 mysql -u root -p
 groupwork
-'''
