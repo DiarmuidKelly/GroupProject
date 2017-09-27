@@ -20,3 +20,8 @@ rails              5.1.4
 Using MYSQL:
 mysql -u root -p
 groupwork
+
+commands:
+use user;
+show tables;
+describe users;
