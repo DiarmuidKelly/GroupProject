@@ -25,3 +25,12 @@ commands:
 use user;
 show tables;
 describe users;
+
+
+MySQL Users:
+loginAuth  -- Mustang   (Permissions to SELECT users.*)
+
+
+
+
+
