@@ -13,7 +13,7 @@ pi
 Installed packages:
 MYSQL              5.5.57-0+deb7u1 (Debian)       -password: groupwork
 PHP                PHP 5.4.45-0+deb7u11 (cli)
-Apache2            Apache/2.2.22 (Debian)
+Apache2            Apache/2.2.22 (Debian)   -- REDUNDANT
 ruby               2.4.1p111 (2017-03-22 revision 58053) [armv7l-linux-eabihf]
 rails              5.1.4
 
@@ -30,7 +30,37 @@ describe users;
 MySQL Users:
 loginAuth  -- Mustang   (Permissions to SELECT users.*)
 
+Rails comes with its own webhosting - Puma - 
 
+Rails commands:
 
+-----------------------------------------
 
+Before running anything go to the rails application you wish to run:
+cd var/www/mainSite
+
+Running rails on port 80 (default :3000 - bin/rails server):
+rvmsudo bundle exec bin/rails s -b 0.0.0.0 -p 80
+
+------------------------------------------
+
+rails new <site>
+bin/rails generrate controller Welcome index
+
+sudo nano app/views/welcome/index.html.erb
+
+sudo nano config/routes.rb
+bin/rails routes
+
+sudo nano app/views/articles/index.html.erb
+sudo nano app/views/articles/_form.html.erb
+sudo nano app/views/articles/new.html.erb
+sudo nano app/views/articles/edit.html.erb
+
+sudo nano app/models/articles.rb
+sudo nano db/migrate/YYYYMMDDHHMMSS_create_articles.db
+
+bin/rails db:migrate
+
+sudo nano app/controllers/articles_controller.rb
 
