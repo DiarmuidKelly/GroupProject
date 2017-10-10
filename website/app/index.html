@@ -24,6 +24,26 @@
       <!-- In production use:
       <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
       -->
+      <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyAOdUdLb-UdCw4pDx_I9XlyO7x0SNaUW3Q",
+          authDomain: "group-project-ff2d3.firebaseapp.com",
+          databaseURL: "https://group-project-ff2d3.firebaseio.com",
+          projectId: "group-project-ff2d3",
+          storageBucket: "group-project-ff2d3.appspot.com",
+          messagingSenderId: "845136226060"
+        };
+        firebase.initializeApp(config);
+        
+      </script>
+      <script src="/__/firebase/4.5.0/firebase-app.js"></script>
+      <script src="/__/firebase/4.5.0/firebase-auth.js"></script>
+      <script src="/__/firebase/4.5.0/firebase-database.js"></script>
+      <script src="/__/firebase/4.5.0/firebase-messaging.js"></script>
+      <script src="/__/firebase/init.js"></script>
+
       <script src="bower_components/angular/angular.js"></script>
       <script src="bower_components/angular-route/angular-route.js"></script>
       <script src="app.js"></script>
