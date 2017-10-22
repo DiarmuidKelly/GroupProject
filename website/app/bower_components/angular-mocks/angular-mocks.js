@@ -1110,7 +1110,7 @@ angular.mock.dump = function(object) {
   ```js
   // The module code
   angular
-    .module('MyApp', [])
+    .module('VCA_WebApp', [])
     .controller('MyController', MyController);
 
   // The controller code
@@ -1143,7 +1143,7 @@ angular.mock.dump = function(object) {
        var $httpBackend, $rootScope, createController, authRequestHandler;
 
        // Set up the module
-       beforeEach(module('MyApp'));
+       beforeEach(module('VCA_WebApp'));
 
        beforeEach(inject(function($injector) {
          // Set up the mock http service responses
@@ -2416,8 +2416,8 @@ angular.module('ngMockE2E', ['ng']).config(['$provide', function($provide) {
  * on the `ngMockE2E` and your application modules and defines the fake backend:
  *
  * ```js
- *   var myAppDev = angular.module('myAppDev', ['myApp', 'ngMockE2E']);
- *   myAppDev.run(function($httpBackend) {
+ *   var VCA_WebAppDev = angular.module('VCA_WebAppDev', ['VCA_WebApp', 'ngMockE2E']);
+ *   VCA_WebAppDev.run(function($httpBackend) {
  *     var phones = [{name: 'phone1'}, {name: 'phone2'}];
  *
  *     // returns the current list of phones
@@ -2437,11 +2437,11 @@ angular.module('ngMockE2E', ['ng']).config(['$provide', function($provide) {
  * Afterwards, bootstrap your app with this new module.
  *
  * ## Example
- * <example name="httpbackend-e2e-testing" module="myAppE2E" deps="angular-mocks.js">
+ * <example name="httpbackend-e2e-testing" module="VCA_WebAppE2E" deps="angular-mocks.js">
  * <file name="app.js">
- *   var myApp = angular.module('myApp', []);
+ *   var VCA_WebApp = angular.module('VCA_WebApp', []);
  *
- *   myApp.controller('MainCtrl', function MainCtrl($http) {
+ *   VCA_WebApp.controller('MainCtrl', function MainCtrl($http) {
  *     var ctrl = this;
  *
  *     ctrl.phones = [];
@@ -2466,9 +2466,9 @@ angular.module('ngMockE2E', ['ng']).config(['$provide', function($provide) {
  *   });
  * </file>
  * <file name="e2e.js">
- *   var myAppDev = angular.module('myAppE2E', ['myApp', 'ngMockE2E']);
+ *   var VCA_WebAppDev = angular.module('VCA_WebAppE2E', ['VCA_WebApp', 'ngMockE2E']);
  *
- *   myAppDev.run(function($httpBackend) {
+ *   VCA_WebAppDev.run(function($httpBackend) {
  *     var phones = [{name: 'phone1'}, {name: 'phone2'}];
  *
  *     // returns the current list of phones
@@ -3038,16 +3038,16 @@ angular.mock.$RootScopeDecorator = ['$delegate', function($delegate) {
    * Example of what a typical jasmine tests looks like with the inject method.
    * ```js
    *
-   *   angular.module('myApplicationModule', [])
+   *   angular.module('VCA_WebApplicationModule', [])
    *       .value('mode', 'app')
    *       .value('version', 'v1.0.1');
    *
    *
-   *   describe('MyApp', function() {
+   *   describe('VCA_WebApp', function() {
    *
    *     // You need to load modules that you want to test,
    *     // it loads only the "ng" module by default.
-   *     beforeEach(module('myApplicationModule'));
+   *     beforeEach(module('VCA_WebApplicationModule'));
    *
    *
    *     // inject() is used to inject arguments of all given functions

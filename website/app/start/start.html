@@ -1,9 +1,16 @@
-    <div class="container">
+    <div class="container"  ng-controller="StartCtrl">
          <div class="row">
             <div class="col-sm-3 col-md-6">
                 <h2>Administration</h2>
                 <p><button class="btn">Add new CVA</button></p>
                 <p><button class="btn">Add new patient</button></p>
+
+                <h2>Patients currently outside of geofence</h2>
+                <div class="list-group">
+                  <a href="#/detailViewElderly" class="list-group-item"> {{elderly_name}}</a>
+                  <a href="#/detailViewElderly" class="list-group-item">Mrs. O'Brien</a>
+                </div>
+
             </div>
             <div class="col-sm-9 col-md-6">
                 <h2>Currently active VCA-Systems</h2>

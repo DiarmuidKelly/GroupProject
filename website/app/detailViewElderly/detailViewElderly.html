@@ -1,22 +1,10 @@
-<!-- <!DOCTYPE html>
-<html lang="en" ng-app="myApp" ng-controller="DVECtrl">
- 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
- 
-    <title>Elderly</title>
- 
-    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"> 
- 
-</head>
- 
-<body>
- -->
-    <div class="container">
+<div class="container" ng-controller="DVECtrl">
         <div class="page-header">
-            <h1>Mr. Elderly Person</h1>   
+            <h1>Mr. Smith</h1>   
         </div>
+
+        <div class="alert alert-success" role="alert">Mr. Smith is currently inside the geofence.</div>
+        <div class="alert alert-danger" role="alert">Mr. Smith is currently outside the geofence! </div>
 
          <div class="row">
             <div class="col-sm-6 col-md-6 col-lg-6">
@@ -59,8 +47,7 @@
                 </ul>
             </div>
             <div class="col-sm-9 col-md-6">
-                <p class="bg-success"><span class="glyphicon glyphicon-info-sign"></span> The patient is currently inside the geofence.</p>
-                <p class="bg-danger"><span class="glyphicon glyphicon-warning-sign"></span> The patient is currently outside the geofence!</p>
+                <!-- Still space for some information here-->
             </div>
         </div>
         

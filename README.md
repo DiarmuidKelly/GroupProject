@@ -20,6 +20,16 @@ https://play.google.com/store/apps/details?id=com.integreight.onesheeld
 Ruby Security: (interesting part here is the sessions and ssl)
 http://guides.rubyonrails.org/security.html
 
+**************************
+Test Data in Firebase: 
+**************************
+
+Employee Login: 
+employee@email.ie - test123
+
+Relative Login:
+relative@email.ie - test123
+
 ***********
 Other: 
 ***********

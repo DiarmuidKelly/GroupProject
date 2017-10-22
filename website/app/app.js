@@ -1,23 +1,25 @@
+// https://github.com/angular/angular-seed <-- Sceleton of project taken from this source
+
 'use strict';
 
-angular.module('myApp', [
+angular.module('VCA_WebApp', [
 	'ngRoute',
-	'myApp.login',
-	'myApp.start',
-	'myApp.detailViewElderly',
-	'myApp.header'
-	]).config(['$routeProvider', function($routeProvider) {
+	'VCA_WebApp.start',
+	'VCA_WebApp.detailViewElderly',
+	'VCA_WebApp.messageBoard',
+	'VCA_WebApp.header', 
+	'VCA_WebApp.landingPage',
+	'firebase'
+	])
+.config(['$routeProvider', function($routeProvider) {
 		$routeProvider
-		.when("/login", {
-			templateUrl : '/login/login.html'
-		})
 		.when("/detailViewElderly", {
-			templateUrl : '/detailViewElderly/detailViewElderly.html'
+			templateUrl : 'detailViewElderly/detailViewElderly.html'
 		})
 		.when("/", {
-			templateUrl : '/start/start.html'
+			templateUrl : 'landingPage/landingPage.html'
 		})
 	//	.otherwise({
 	//		redirectTo: '/start'
 	//	});
-	}]);
+}]);
