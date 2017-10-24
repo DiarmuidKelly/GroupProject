@@ -20,6 +20,13 @@ https://play.google.com/store/apps/details?id=com.integreight.onesheeld
 Ruby Security: (interesting part here is the sessions and ssl)
 http://guides.rubyonrails.org/security.html
 
+**************************
+Product and Sprint Backlog
+**************************
+
+Link to Google Sheet
+https://docs.google.com/spreadsheets/d/1-7OTmDDf3AV2LdaKmMwGqvl10lFIMPldz6HxQw08N9k/edit?usp=sharing
+
 ***********
 Other: 
 ***********
