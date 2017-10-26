@@ -5,6 +5,8 @@ angular.module('VCA_WebApp')
 .factory('UserService', ['$firebaseObject', '$q','$rootScope', function($firebaseObject, $q, $rootScope){
 	// Felder: userId, first_name, groups[], last_name, role
 
+    var firebaseDB = firebase.firestore();
+
     var firebaseRefString = 'application_data/users/';
     var _userId;
     var _userData;
@@ -33,15 +35,30 @@ angular.module('VCA_WebApp')
         loadUserData : function(userId){
             _userId = userId;
             var defer = $q.defer();
-            var ref = firebase.database().ref(firebaseRefString + userId);
-            _userData = $firebaseObject(ref);
 
-            _userData.$loaded().then(function(){
-                console.log("user data loaded");
-                defer.resolve(_userData);
+            firebaseDB.collection("users").doc(userId).get().then(function(doc) {
+                if (doc.exists) {
+                    console.log("Document data:", doc.data());
+                    _userData = doc.data();
+                    defer.resolve(_userData);
+                } else {
+                    console.log("No such document!");
+                }
             });
 
             return defer.promise;
+
+            //_userId = userId;
+            //var defer = $q.defer();
+            //var ref = firebase.database().ref(firebaseRefString + userId);
+            //_userData = $firebaseObject(ref);
+
+            //_userData.$loaded().then(function(){
+            //    console.log("user data loaded");
+            //    defer.resolve(_userData);
+            //});
+
+            //return defer.promise;
         },
         getUserData : function(){
             return _userData;
