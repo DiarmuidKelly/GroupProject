@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_medical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.shinnainai.project.Medical">
+
+    <TextView
+        android:text="Medical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/medicalHeader"
+        android:background="@android:color/darker_gray"
+        android:textAlignment="center"
+        android:textSize="45sp"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Memory Game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medicalHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:id="@+id/memoryGameTextView"
+        android:textSize="36sp" />
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="17dp"
+        android:id="@+id/memoryGameGridLayout"
+        android:layout_height="130dp"
+        android:layout_below="@+id/memoryGameTextView"
+        android:layout_alignParentStart="true"
+        android:columnCount="2"
+        android:rowCount="5"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:text="Score"
+            android:textSize="30sp"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:layout_width="190dp" />
+
+        <TextView
+            android:text="Date"
+            android:textSize="30sp"
+            android:layout_height="40dp"
+            android:id="@+id/dateTextView"
+            android:textAlignment="center"
+            android:layout_width="190dp" />
+
+        <TextView
+            android:text="100"
+            android:textSize="25sp"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:id="@+id/score1"
+            android:layout_width="190dp" />
+        <TextView
+            android:text="10/10/17"
+            android:textSize="25sp"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:id="@+id/date1"
+            android:layout_width="190dp" />
+        <TextView
+            android:text="64"
+            android:textSize="25sp"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:id="@+id/score2"
+            android:layout_width="190dp" />
+        <TextView
+            android:text="11/10/17"
+            android:textSize="25sp"
+            android:layout_height="40dp"
+            android:textAlignment="center"
+            android:id="@+id/date2"
+            android:layout_width="190dp" />
+    </GridLayout>
+
+    <TextView
+        android:text="Calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/memoryGameGridLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/calendarHeader"
+        android:textSize="45sp"
+        android:textStyle="normal|bold"
+        android:background="@android:color/darker_gray"
+        android:textAlignment="center" />
+
+
+
+    <TextView
+        android:text="Appointment"
+        android:textSize="30sp"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+        android:layout_width="190dp"
+        android:layout_below="@+id/calendarHeader"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="17dp"
+        android:id="@+id/appointmentTextView" />
+
+
+
+    <TextView
+        android:text="Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/calDateTextView"
+        android:textSize="30sp"
+        android:layout_below="@+id/calendarHeader"
+        android:layout_alignRight="@+id/appointmentTextView"
+        />
+
+
+</RelativeLayout>
