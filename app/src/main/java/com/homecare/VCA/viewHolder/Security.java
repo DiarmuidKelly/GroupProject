@@ -1,4 +1,4 @@
-package com.homecare.VCA;
+package com.homecare.VCA.viewHolder;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -14,6 +14,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.homecare.VCA.R;
 
 public class Security extends BaseActivity implements View.OnClickListener{
 

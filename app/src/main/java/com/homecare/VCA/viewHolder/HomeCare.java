@@ -1,11 +1,11 @@
-package com.homecare.VCA;
+package com.homecare.VCA.viewHolder;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class HomeCare extends AppCompatActivity {
+import com.homecare.VCA.R;
 
-    //
+public class HomeCare extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

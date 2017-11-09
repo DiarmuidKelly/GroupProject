@@ -1,8 +1,12 @@
-package com.homecare.VCA;
+package com.homecare.VCA.viewHolder;
 
 import android.app.ProgressDialog;
 import android.support.annotation.VisibleForTesting;
 import android.support.v7.app.AppCompatActivity;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.homecare.VCA.R;
+
 /**
  * Created by dok-1 on 09/11/2017.
  */
@@ -32,4 +36,9 @@ public class BaseActivity extends AppCompatActivity {
         super.onStop();
         hideProgressDialog();
     }
+
+    public String getUid() {
+        return FirebaseAuth.getInstance().getCurrentUser().getUid();
+    }
+
 }

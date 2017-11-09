@@ -1,10 +1,12 @@
-package com.homecare.VCA;
+package com.homecare.VCA.viewHolder;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+
+import com.homecare.VCA.R;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -42,6 +44,13 @@ public class MainActivity extends AppCompatActivity {
                 startManagement();
             }
         });
+        Button signInButton = (Button) findViewById(R.id.SignInBtn);
+        managementButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View view) {
+                System.out.println("Sign In Button Clicked");
+                startSignIn();
+            }
+        });
     }
 
     private void startHomeCare() {
@@ -67,5 +76,10 @@ public class MainActivity extends AppCompatActivity {
         Intent managementIntent = new Intent(MainActivity.this, Management.class);
         startActivity(managementIntent);
 
+    }
+    private void startSignIn(){
+        this.setTitle("Sign In");
+        Intent SignInActivityIntent = new Intent(MainActivity.this, SignInActivity.class);
+        startActivity(SignInActivityIntent);
     }
 }

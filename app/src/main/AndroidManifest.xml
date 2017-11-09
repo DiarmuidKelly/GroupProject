@@ -10,18 +10,18 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".viewHolder.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".HomeCare" />
-        <activity android:name=".Management" />
-        <activity android:name=".Medical" />
+        <activity android:name=".viewHolder.HomeCare" />
+        <activity android:name=".viewHolder.Management" />
+        <activity android:name=".viewHolder.Medical" />
         <activity
-            android:name=".Security"
+            android:name=".viewHolder.Security"
             android:label="R.label_emailpassword"
             android:windowSoftInputMode="stateAlwaysHidden" />
     </application>
