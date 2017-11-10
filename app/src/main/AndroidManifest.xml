@@ -23,8 +23,6 @@
         <activity
             android:name=".viewHolder.SignIn"
             android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity
-        android:name=".viewHolder.SignOut"/>
 
         <meta-data
             android:name="com.google.android.gms.car.application"

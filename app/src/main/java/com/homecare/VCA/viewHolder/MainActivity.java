@@ -1,11 +1,13 @@
 package com.homecare.VCA.viewHolder;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.homecare.VCA.R;
 
 public class MainActivity extends BaseActivity {
@@ -14,6 +16,19 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final FirebaseUser currentUser = mAuth.getCurrentUser();
+
+
+        if(mAuth != null){
+            localUser.setAuth(mAuth);
+            if(currentUser != null) {
+                localUser.setEmail(currentUser.getEmail());
+                localUser.setUsername(currentUser.getDisplayName());
+                localUser.setSignedIn(true);
+            }
+        }
+
         Thread t = new Thread() {
 
             @Override
@@ -24,6 +39,7 @@ public class MainActivity extends BaseActivity {
                         runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
+                                final Boolean SignedIn = localUser.getSignedIn();
                                 Button homeCareButton = (Button) findViewById(R.id.HomeCareBtn);
                                 homeCareButton.setOnClickListener(new View.OnClickListener() {
                                     public void onClick(View view) {
@@ -39,17 +55,20 @@ public class MainActivity extends BaseActivity {
                                     }
                                 });
                                 Button signInButton = (Button) findViewById(R.id.SignInBtn);
-                                if(mSignedIn == true){
+                                TextView UserIDField =  (TextView) findViewById(R.id.UserID);
+                                if(localUser.getSignedIn() == true){
+                                    UserIDField.setText("Signed in: " + localUser.getEmail());
                                     signInButton.setText("Sign Out");
-                                }else if(mSignedIn == false) {
+                                }else if(localUser.getSignedIn() == false) {
+                                    UserIDField.setText("Signed Out");
                                     signInButton.setText("Sign In");
                                 }
                                 signInButton.setOnClickListener(new View.OnClickListener() {
                                     public void onClick(View view) {
                                         System.out.println("Sign In Button Clicked");
-                                        if( mSignedIn == true){
-                                            startSignOut();
-                                        }else if(mSignedIn == false) {
+                                        if( localUser.getSignedIn() == true){
+                                            new SignOut();
+                                        }else if(localUser.getSignedIn() == false) {
                                             startSignIn();
                                         }
 
@@ -93,10 +112,12 @@ public class MainActivity extends BaseActivity {
         startActivity(signInIntent);
 
     }
+    /*
     private void startSignOut(){
         Intent signOutIntent = new Intent(MainActivity.this, SignOut.class);
         startActivity(signOutIntent);
     }
+    */
     private void startManagement() {
         Intent managementIntent = new Intent(MainActivity.this, Management.class);
         startActivity(managementIntent);

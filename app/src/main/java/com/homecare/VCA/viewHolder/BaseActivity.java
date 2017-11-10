@@ -16,16 +16,15 @@ import com.homecare.VCA.models.User;
 
 public class BaseActivity extends AppCompatActivity {
 
-    public User user;
+    protected static User localUser = new User();
 
     public TextView mStatusTextView;
     public TextView mDetailTextView;
     public EditText mEmailField;
     public EditText mPasswordField;
-    protected static Boolean mSignedIn = false;
 
     // [START declare_auth]
-    public FirebaseAuth mAuth;
+    protected static FirebaseAuth mAuth = FirebaseAuth.getInstance();
     // [END declare_auth]
     @VisibleForTesting
     public ProgressDialog mProgressDialog;

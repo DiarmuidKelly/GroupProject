@@ -5,7 +5,6 @@ import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
-import android.widget.BaseExpandableListAdapter;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -103,7 +102,10 @@ public class SignIn extends BaseActivity implements View.OnClickListener{
                             // Sign in success, update UI with the signed-in user's information
                             Log.d(TAG, "signInWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
-                            mSignedIn = true;
+                            localUser.setAuth(mAuth);
+                            localUser.setEmail(user.getEmail());
+                            localUser.setUsername(user.getDisplayName());
+                            localUser.setSignedIn(true);
                             updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
@@ -122,11 +124,6 @@ public class SignIn extends BaseActivity implements View.OnClickListener{
                     }
                 });
         // [END sign_in_with_email]
-    }
-
-    private void signOut() {
-        mAuth.signOut();
-        updateUI(null);
     }
 
     private void sendEmailVerification() {

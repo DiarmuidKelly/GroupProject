@@ -2,31 +2,89 @@ package com.homecare.VCA.models;
 
 import java.util.Date;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.IgnoreExtraProperties;
 
 @IgnoreExtraProperties
 public class User {
 
+    public Boolean signedIn;
     public String username;
     public String email;
     public Date age;
     public Address address;
     public String role;
-
+    public FirebaseAuth auth;
 
     //TODO Make user an interface for patient, carer, doctor
     public User() {
-        // Default constructor required for calls to DataSnapshot.getValue(User.class)
+
+        this.resetAll();
+
     }
 
-    public User(String username, String email, Date DOB, String[] address, String role) {
+    public Boolean getSignedIn() {
+        return signedIn;
+    }
+
+    public void setSignedIn(Boolean signedIn) {
+        this.signedIn = signedIn;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
         this.username = username;
-        this.email = email;
-        this.age = age;
-        this.address = new Address(address[0],address[1],address[2],address[3],address[4],address[5]);
-        this.role = role;
-
-
     }
 
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public Date getAge() {
+        return age;
+    }
+
+    public void setAge(Date age) {
+        this.age = age;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+    public FirebaseAuth getAuth() {
+        return auth;
+    }
+
+    public void setAuth(FirebaseAuth auth) {
+        this.auth = auth;
+    }
+    public void resetAll(){
+        this.signedIn = false;
+        this.username = null;
+        this.email = null;
+        this.age = null;
+        this.address = null;
+        this.role = null;
+        this.auth = null;
+
+    }
 }

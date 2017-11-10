@@ -44,4 +44,5 @@
 
     <string name="id_fmt">User ID: %s</string>
     <string name="email_fmt">Email: %s</string>
+    <string name="virtual_care_assistant">Virtual Care Assistant</string>
 </resources>
