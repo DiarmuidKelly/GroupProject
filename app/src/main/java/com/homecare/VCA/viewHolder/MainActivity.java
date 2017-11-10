@@ -44,42 +44,26 @@ public class MainActivity extends AppCompatActivity {
                 startManagement();
             }
         });
-        Button signInButton = (Button) findViewById(R.id.SignInBtn);
-        managementButton.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View view) {
-                System.out.println("Sign In Button Clicked");
-                startSignIn();
-            }
-        });
     }
 
     private void startHomeCare() {
-        this.setTitle("Home Care");
         Intent homeCareIntent = new Intent(MainActivity.this, HomeCare.class);
         startActivity(homeCareIntent);
 
     }
     private void startMedical() {
-        this.setTitle("Medical");
         Intent medicalIntent = new Intent(MainActivity.this, Medical.class);
         startActivity(medicalIntent);
 
     }
     private void startSecurity() {
-        this.setTitle("Security");
         Intent securityIntent = new Intent(MainActivity.this, Security.class);
         startActivity(securityIntent);
 
     }
     private void startManagement() {
-        this.setTitle("Management");
         Intent managementIntent = new Intent(MainActivity.this, Management.class);
         startActivity(managementIntent);
 
-    }
-    private void startSignIn(){
-        this.setTitle("Sign In");
-        Intent SignInActivityIntent = new Intent(MainActivity.this, SignInActivity.class);
-        startActivity(SignInActivityIntent);
     }
 }
