@@ -4,7 +4,6 @@ import java.util.Date;
 
 import com.google.firebase.database.IgnoreExtraProperties;
 
-// [START blog_user_class]
 @IgnoreExtraProperties
 public class User {
 
@@ -26,7 +25,8 @@ public class User {
         this.age = age;
         this.address = new Address(address[0],address[1],address[2],address[3],address[4],address[5]);
         this.role = role;
+
+
     }
 
 }
-// [END blog_user_class]
