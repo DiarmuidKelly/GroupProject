@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.homecare.VCA.R;
 
@@ -40,20 +39,6 @@ public class MainActivity extends BaseActivity {
                             @Override
                             public void run() {
                                 final Boolean SignedIn = localUser.getSignedIn();
-                                Button homeCareButton = (Button) findViewById(R.id.HomeCareBtn);
-                                homeCareButton.setOnClickListener(new View.OnClickListener() {
-                                    public void onClick(View view) {
-                                        System.out.println("Home Care Button Clicked");
-                                        startHomeCare();
-                                    }
-                                });
-                                Button medicalButton = (Button) findViewById(R.id.MedicalBtn);
-                                medicalButton.setOnClickListener(new View.OnClickListener() {
-                                    public void onClick(View view) {
-                                        System.out.println("Home Care Button Clicked");
-                                        startMedical();
-                                    }
-                                });
                                 Button signInButton = (Button) findViewById(R.id.SignInBtn);
                                 TextView UserIDField =  (TextView) findViewById(R.id.UserID);
                                 if(localUser.getSignedIn() == true){
@@ -74,10 +59,32 @@ public class MainActivity extends BaseActivity {
 
                                     }
                                 });
+                                ////////////////////////////////////////////////////
+                                Button accountButton = (Button) findViewById(R.id.AccountBtn);
+                                accountButton.setOnClickListener(new View.OnClickListener() {
+                                    public void onClick(View view) {
+                                        System.out.println("Account Button Clicked");
+                                        startAccount();
+                                    }
+                                });
+                                Button homeCareButton = (Button) findViewById(R.id.HomeCareBtn);
+                                homeCareButton.setOnClickListener(new View.OnClickListener() {
+                                    public void onClick(View view) {
+                                        System.out.println("Home Care Button Clicked");
+                                        startHomeCare();
+                                    }
+                                });
+                                Button medicalButton = (Button) findViewById(R.id.MedicalBtn);
+                                medicalButton.setOnClickListener(new View.OnClickListener() {
+                                    public void onClick(View view) {
+                                        System.out.println("Medical Button Clicked");
+                                        startMedical();
+                                    }
+                                });
                                 Button managementButton = (Button) findViewById(R.id.ManagementBtn);
                                 managementButton.setOnClickListener(new View.OnClickListener() {
                                     public void onClick(View view) {
-                                        System.out.println("Home Care Button Clicked");
+                                        System.out.println("Management Button Clicked");
                                         startManagement();
                                     }
                                 });
@@ -96,7 +103,11 @@ public class MainActivity extends BaseActivity {
 
 
     }
+    private void startAccount() {
+        Intent accountIntent = new Intent(MainActivity.this, Account.class);
+        startActivity(accountIntent);
 
+    }
     private void startHomeCare() {
         Intent homeCareIntent = new Intent(MainActivity.this, HomeCare.class);
         startActivity(homeCareIntent);
@@ -112,12 +123,6 @@ public class MainActivity extends BaseActivity {
         startActivity(signInIntent);
 
     }
-    /*
-    private void startSignOut(){
-        Intent signOutIntent = new Intent(MainActivity.this, SignOut.class);
-        startActivity(signOutIntent);
-    }
-    */
     private void startManagement() {
         Intent managementIntent = new Intent(MainActivity.this, Management.class);
         startActivity(managementIntent);

@@ -17,6 +17,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".viewHolder.Account" />
         <activity android:name=".viewHolder.HomeCare" />
         <activity android:name=".viewHolder.Management" />
         <activity android:name=".viewHolder.Medical" />
