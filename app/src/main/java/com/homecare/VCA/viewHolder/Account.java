@@ -24,6 +24,9 @@ import com.homecare.VCA.R;
 import com.homecare.VCA.BuildConfig;
 
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.gms.tasks.Task;
 import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.common.api.ResolvableApiException;
 import com.google.android.gms.location.FusedLocationProviderClient;
@@ -36,17 +39,10 @@ import com.google.android.gms.location.LocationSettingsResponse;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
 import com.google.android.gms.location.SettingsClient;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 
 import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
-import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
-import com.google.firebase.firestore.ListenerRegistration;
-import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.Transaction;
 
 import java.text.DateFormat;
@@ -165,6 +161,11 @@ public class Account extends BaseActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        mFirestore = FirebaseFirestore.getInstance();
+
+        mUserRef = mFirestore.collection("users").document(localUser.getUID());
+
+
         // Locate the UI widgets.
         mStartUpdatesButton = (Button) findViewById(R.id.start_updates_button);
         mStopUpdatesButton = (Button) findViewById(R.id.stop_updates_button);
@@ -193,11 +194,25 @@ public class Account extends BaseActivity {
         buildLocationSettingsRequest();
     }
 
-    private void updateUserLocation() {
-        if(mCurrentLocation != null)
-        localUser.setLocation(mCurrentLocation);
+    private Task<Void> updateUserLocation(FirebaseFirestore mFirestore, DocumentReference mUserRef) {
+        if (mCurrentLocation != null) {
+            localUser.setLocation(mCurrentLocation);
+            final DocumentReference geoRef = this.mUserRef.collection("geoPosition").document();
+            return this.mFirestore.runTransaction(new Transaction.Function<Void>() {
+                @Override
+                public Void apply(Transaction transaction) throws FirebaseFirestoreException {
+                    // Commit to Firestore
+                    transaction.set(geoRef, localUser.geo);
+
+                    return null;
+                }
+            });
+        }
         if(mLastUpdateTime != "")
         localUser.setLocationTime(mLastUpdateTime);
+
+
+        return null;
     }
 
     /**
@@ -270,7 +285,7 @@ public class Account extends BaseActivity {
 
                 mCurrentLocation = locationResult.getLastLocation();
                 mLastUpdateTime = DateFormat.getTimeInstance().format(new Date());
-                updateUserLocation();
+                updateUserLocation(mFirestore, mUserRef);
                 updateLocationUI();
             }
         };
@@ -345,7 +360,7 @@ public class Account extends BaseActivity {
                         mFusedLocationClient.requestLocationUpdates(mLocationRequest,
                                 mLocationCallback, Looper.myLooper());
 
-                        updateUserLocation();
+                        updateUserLocation(mFirestore, mUserRef);
                         updateUI();
                     }
                 })

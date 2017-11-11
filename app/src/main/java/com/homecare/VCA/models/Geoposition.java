@@ -41,4 +41,12 @@ public class Geoposition {
     public void setLastUpdateTime(String lastUpdateTime) {
         this.lastUpdateTime = lastUpdateTime;
     }
+
+    public String getLastUpdateTime() {
+        return lastUpdateTime;
+    }
+
+    public Location getLocation() {
+        return location;
+    }
 }

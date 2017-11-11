@@ -19,6 +19,7 @@ public class User {
     public String role;
     public FirebaseAuth auth;
     public Geoposition geo;
+    public String UID;
 
     //TODO Make user an interface for patient, carer, doctor
     public User() {
@@ -89,6 +90,7 @@ public class User {
         this.address = new Address();
         this.role = null;
         this.auth = null;
+        this.UID = null;
         this.geo = new Geoposition();
 
     }
@@ -100,4 +102,10 @@ public class User {
     public void setLocationTime(String locationTime) {
         this.geo.setLastUpdateTime(locationTime);
     }
+
+    public void setUID(String UID) {
+        this.UID = UID;
+    }
+    public String getUID(){ return UID; }
+    public Geoposition getGeo(){    return geo; }
 }
