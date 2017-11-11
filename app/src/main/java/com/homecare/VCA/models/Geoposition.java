@@ -1,5 +1,6 @@
 package com.homecare.VCA.models;
 
+import android.location.Location;
 import android.text.TextUtils;
 
 import com.google.firebase.auth.FirebaseUser;
@@ -16,7 +17,9 @@ public class Geoposition {
     private String userName;
     private double longitude;
     private double latitude;
+    private Location location;
     private @ServerTimestamp Date timestamp;
+    public String lastUpdateTime;
 
     public Geoposition() {}
 
@@ -31,4 +34,11 @@ public class Geoposition {
         this.latitude = lat;
     }
 
+    public void setLocation(Location location) {
+        this.location = location;
+    }
+
+    public void setLastUpdateTime(String lastUpdateTime) {
+        this.lastUpdateTime = lastUpdateTime;
+    }
 }

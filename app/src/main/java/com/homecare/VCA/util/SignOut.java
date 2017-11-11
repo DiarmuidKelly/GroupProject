@@ -7,7 +7,7 @@ import com.homecare.VCA.viewHolder.BaseActivity;
 
 public class SignOut extends BaseActivity {
 
-    SignOut(){
+    public SignOut(){
         mAuth.signOut();
         localUser.resetAll();
 

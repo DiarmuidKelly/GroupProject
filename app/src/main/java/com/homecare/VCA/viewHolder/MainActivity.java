@@ -53,7 +53,7 @@ public class MainActivity extends BaseActivity {
                                     public void onClick(View view) {
                                         System.out.println("Sign In Button Clicked");
                                         if( localUser.getSignedIn() == true){
-                                            new SignOut();
+                                            new com.homecare.VCA.util.SignOut();
                                         }else if(localUser.getSignedIn() == false) {
                                             startSignIn();
                                         }

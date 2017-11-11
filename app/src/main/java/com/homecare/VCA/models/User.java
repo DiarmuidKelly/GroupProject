@@ -1,5 +1,8 @@
 package com.homecare.VCA.models;
 
+import android.location.Location;
+import android.webkit.GeolocationPermissions;
+
 import java.util.Date;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -15,6 +18,7 @@ public class User {
     public Address address;
     public String role;
     public FirebaseAuth auth;
+    public Geoposition geo;
 
     //TODO Make user an interface for patient, carer, doctor
     public User() {
@@ -82,9 +86,18 @@ public class User {
         this.username = null;
         this.email = null;
         this.age = null;
-        this.address = null;
+        this.address = new Address();
         this.role = null;
         this.auth = null;
+        this.geo = new Geoposition();
 
+    }
+
+    public void setLocation(Location location) {
+        this.geo.setLocation(location);
+    }
+
+    public void setLocationTime(String locationTime) {
+        this.geo.setLastUpdateTime(locationTime);
     }
 }
