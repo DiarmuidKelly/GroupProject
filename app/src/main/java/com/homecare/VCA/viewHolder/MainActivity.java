@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseUser;
 import com.homecare.VCA.R;
+import com.homecare.VCA.util.SignOut;
 
 public class MainActivity extends BaseActivity {
 

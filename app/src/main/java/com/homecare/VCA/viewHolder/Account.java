@@ -2,12 +2,12 @@ package com.homecare.VCA.viewHolder;
 
 import android.os.Bundle;
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.Query;
 import com.homecare.VCA.R;
+import com.google.firebase.firestore.FirebaseFirestore;
 
-import java.util.HashMap;
-import java.util.Map;
+
 
 /**
  * Created by dok-1 on 10/11/2017.
@@ -15,8 +15,12 @@ import java.util.Map;
 
 public class Account extends BaseActivity {
 
-    private DatabaseReference mDatabase;
+    public static final String KEY_USER_ID = "key_user_id";
 
+
+
+    private FirebaseFirestore mFirestore;
+    private DocumentReference mUserRef;
 
 
 
@@ -25,21 +29,19 @@ public class Account extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account);
 
-        mDatabase = FirebaseDatabase.getInstance().getReference();
-        updateNumber();
+        String userID = getIntent().getExtras().getString(KEY_USER_ID);
+
+        mFirestore = FirebaseFirestore.getInstance();
+
+        mUserRef = mFirestore.collection("users").document(userID);
+
+        Query ratingsQuery = mUserRef
+                .collection("geoLocation")
+                .orderBy("timestamp", Query.Direction.DESCENDING)
+                .limit(50);
+
 
     }
 
-
-    private void updateNumber() {
-        // Create new post at /user-posts/$userid/$postid and at
-        // /posts/$postid simultaneously
-        String key = mDatabase.child("users").push().getKey();
-
-        Map<String, Object> childUpdates = new HashMap<>();
-        childUpdates.put("/users/" + getUid() + "/" + key, 1);
-
-        mDatabase.updateChildren(childUpdates);
-    }
 
 }

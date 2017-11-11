@@ -1,1 +1,1 @@
-include ':app', ':loginpage'
+include ':app', ':firestore_example:app', 'android-play-location-master:LocationUpdates:app'
