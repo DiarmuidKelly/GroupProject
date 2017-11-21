@@ -1,4 +1,4 @@
-package com.example.shinnainai.project;
+package com.homecare.VCA;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

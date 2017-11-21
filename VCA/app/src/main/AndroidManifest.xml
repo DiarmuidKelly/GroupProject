@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.shinnainai.project">
+    package="com.homecare.VCA">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -18,7 +20,10 @@
         <activity android:name=".HomeCare" />
         <activity android:name=".Management" />
         <activity android:name=".Medical" />
-        <activity android:name=".Security"></activity>
+        <activity
+            android:name=".Security"
+            android:label="R.label_emailpassword"
+            android:windowSoftInputMode="stateAlwaysHidden" />
     </application>
 
 </manifest>
