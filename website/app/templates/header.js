@@ -16,28 +16,39 @@ angular.module('VCA_WebApp.header', ['ngRoute'])
 // Header controller
 .controller('HeaderCtrl', [
 	'$scope',
+	'$rootScope',
+	'$route',
 	'UserService', 
 	'$location', 
 	'$firebase', 
 	'$firebaseObject',
-	function($scope, UserService, $location, $firebase, $firebaseObject) {
+	function($scope, $rootScope,$route, UserService, $location, $firebase, $firebaseObject) {
 		$scope.userData;
+		var patients;
+
+		// show current time in header
+		$scope.getDatetime = Date.now();
+
+		// handle broadcast events
+		$scope.$on('userLoggedOut', function(event, data) {
+			$rootScope.$apply(function() {
+				console.log("logout broadcast received headerCtrl" + data);
+			    $route.reload();	
+			});	
+		});
+
+		$scope.logout = function(){
+			UserService.logoutUser();
+		};
+
 		if(UserService.getAuthenticated()==true){
 			console.log("HeaderCtrl: User signed in");
 			$scope.userId = UserService.getUserId();
 			console.log("User Id of logged in user: " + $scope.userId);
+
 			UserService.loadUserData($scope.userId).then(function(data){
 				console.log("User role = " + data.role);
-				UserService.getUserData().$bindTo($scope, 'userData').then(function() {
-					$scope.first_name = $scope.userData.first_name;
-					$scope.role = $scope.userData.role;
-				});
-				
+				$scope.role = data.role;			
 			});
-		}
-
-		$scope.logout = function(){
-			UserService.logout();
-			$location.path("/landingPage");
-		}
+		}		
 }]);

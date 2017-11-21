@@ -1,10 +1,6 @@
     <div class="container"  ng-controller="StartCtrl">
-         <div class="row">
+         <div class="row" ng-if="role==='employee'">
             <div class="col-sm-3 col-md-6">
-                <h2>Administration</h2>
-                <p><button class="btn">Add new CVA</button></p>
-                <p><button class="btn">Add new patient</button></p>
-
                 <h2>Patients currently outside of geofence</h2>
                 <div class="list-group">
                   <a href="#/detailViewElderly" class="list-group-item"> {{elderly_name}}</a>
@@ -15,6 +11,16 @@
             <div class="col-sm-9 col-md-6">
                 <h2>Currently active VCA-Systems</h2>
                 <img src="start/multiple-markers.png" class="img-responsive">
+            </div>
+         </div>
+         <div class="row" ng-if="role==='caretaker'">
+            <div class="col-sm-12 col-md-12">
+               <h2>Patients associated with you</h2>
+                        <div class="list-group">
+                            <a ng-repeat="p in patients" ng-href="#/detailViewElderly/{{p.userId}}" class="list-group-item"> 
+                                {{p.fName}} {{p.lName}}
+                            </a>
+                        </div>
             </div>
          </div>
     </div>

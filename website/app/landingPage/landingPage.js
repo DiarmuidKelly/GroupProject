@@ -5,8 +5,8 @@ angular.module('VCA_WebApp.landingPage', ['ngRoute'])
 // Declared route 
 .config(['$routeProvider', function($routeProvider) {
 	$routeProvider
-		.when("/detailViewElderly", {
-			templateUrl : '/detailViewElderly/detailViewElderly.html'
+		.when("/register", {
+			templateUrl : '/register/register.html'
 		})
 		.when("/start", {
 			templateUrl : '/start/start.html'
@@ -14,18 +14,32 @@ angular.module('VCA_WebApp.landingPage', ['ngRoute'])
 }])
  
 // Landing Page controller
-.controller('LandingPageCtrl', ["$scope", "$log", "$location", 'UserService',
-	function($scope, $log, $location, UserService) {
+.controller('LandingPageCtrl', ["$scope", "$rootScope", "$log", "$location", 'UserService',
+	function($scope, $rootScope, $log, $location, UserService) {
 		$scope.authenticated = UserService.getAuthenticated();
+		
+		$scope.$on('userLoggedIn', function(event, data) {
+			$rootScope.$apply(function() {
+				console.log("login in broadcast received landingPage" + data);
+			    $location.path("/start"); 
+			});	
+		});
+
+		$scope.$on('userLoggedOut', function(event, data) {
+			$rootScope.$apply(function() {
+				console.log("logout broadcast received landingPage" + data);
+			    $location.path("/landingPage"); 
+			});	
+		});
+
 		if($scope.authenticated){
 			console.log(UserService.getAuthenticated());
-			$location.path("/start");
+			$rootScope.$apply(function() {
+			    $location.path("/start"); 
+			});
 		} else {
 			$scope.authenticate = function() {
-				if(UserService.authenticateUser($scope.email,$scope.password)==true){
-					// weiterleitung auf start-seite
-					$location.path("/start");
-				}
+				UserService.authenticateUser($scope.email,$scope.password);
 			};
-		};
+		}
 }]);

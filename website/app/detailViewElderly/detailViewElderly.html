@@ -1,14 +1,20 @@
 <div class="container" ng-controller="DVECtrl">
         <div class="page-header">
-            <h1>Mr. Smith</h1>   
+            <h1>{{patientData.fName}} {{patientData.lName}}</h1>   
         </div>
 
-        <div class="alert alert-success" role="alert">Mr. Smith is currently inside the geofence.</div>
-        <div class="alert alert-danger" role="alert">Mr. Smith is currently outside the geofence! </div>
+        <div ng-if="insideGeofence" class="alert alert-success" role="alert">{{patientData.fName}} {{patientData.lName}} is currently inside the geofence.</div>
 
+        <div ng-if="!insideGeofence"class="alert alert-danger" role="alert">{{patientData.fName}} {{patientData.lName}} is currently outside the geofence! </div>
+
+         
+                <a href="http://maps.google.com/maps?q={{geodata.location.latitude}},{{geodata.location.longitude}}" target="_blank">
+                  Open current location on google maps</a>
+                <div id="map" style="height: 200px;width:300px;background:#000000;"></div>
+            
          <div class="row">
             <div class="col-sm-6 col-md-6 col-lg-6">
-                <img class="img-responsive" src="detailViewElderly/Maps_screenshot.png" width="100%">
+                <div id="map" style="background:#000000;"></div>
             </div>
                 
             <div class="col-sm-6 col-md-6 col-lg-6">
@@ -55,6 +61,7 @@
                     <span class="slider round"></span>
                     </label> 
                   </td>
+                  <td> </td>
                   <td> Lights</td>
                 </tr>
                 <tr>
@@ -64,6 +71,7 @@
                     <span class="slider round"></span>
                     </label>
                   </td>
+                   <td> </td>
                   <td> Heating </td>
                 </tr>
               </table>

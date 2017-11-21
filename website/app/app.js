@@ -9,13 +9,11 @@ angular.module('VCA_WebApp', [
 	'VCA_WebApp.messageBoard',
 	'VCA_WebApp.header', 
 	'VCA_WebApp.landingPage',
+	'VCA_WebApp.register',
 	'firebase'
 	])
 .config(['$routeProvider', function($routeProvider) {
 		$routeProvider
-		.when("/detailViewElderly", {
-			templateUrl : 'detailViewElderly/detailViewElderly.html'
-		})
 		.when("/", {
 			templateUrl : 'landingPage/landingPage.html'
 		})

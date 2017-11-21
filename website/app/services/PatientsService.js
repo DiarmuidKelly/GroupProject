@@ -7,7 +7,9 @@ angular.module('VCA_WebApp')
 .factory('PatientsService', ['UserService','$q', '$firebaseObject',function(UserService, $q, $firebaseObject) {
 // Fields: user_id, vca_home, first_name, last_name, role
 
-	var firebaseRefString = 'application_data/groups/';
+	var firebaseRefString = 'application_data/users/';
+	var firebaseDB = firebase.firestore();
+
     var _userId = UserService.getUserId();
    	var _groupsData;
    	var _patients = [];
@@ -15,29 +17,39 @@ angular.module('VCA_WebApp')
    	var factory = this;
 
 	factory = {
-		loadPatients : function(){
+		getPatientFromFB : function(userId){
             var defer = $q.defer();
-            var ref = firebase.database().ref(firebaseRefString).orderByKey();
-            _groupsData = $firebaseObject(ref);
 
-            _groupsData.$loaded().then(function(){
-                console.log("groupsData loaded");
-
-                // retrieves list of patients for all groups
-                var listOfGroups = [];
-			    angular.forEach(_groupsData, function(value,key){
-			       	listOfGroups.push({ groupId: key, patientsList: value.patients });
-
-			       	angular.forEach(value.patients, function(value,key){
-			    		_patients.push({patientId: key , patientData: value });
-			    	});
-			    });
-			    
-			    console.log(_patients);
-                defer.resolve(_patients);
+            firebaseDB.collection("users").doc(userId).get().then(function(doc) {
+                if (doc.exists) {
+                    _patients.push(doc.data());
+                    defer.resolve(doc.data());
+                } else {
+                    console.log("No such document!");
+                }
             });
 
-            return defer.promise;
+        return defer.promise;
+        },
+        getPatientById : function(userId){
+        	var result = _patients.filter(function( obj ) {
+			  return obj.userId == userId;
+			});
+			return result;
+        },
+        getPatientGeoLocation : function(userId){
+            var defer = $q.defer();
+
+            // get the most recent location from database
+        	firebaseDB.collection("users").doc(userId).collection("geoPosition").orderBy("lastUpdateTime").limit(1)
+        				.get().then(function(querySnapshot) {
+                				querySnapshot.forEach(function(doc) {
+                					console.log("geolocation data: ", doc.data());
+                					defer.resolve(doc.data());
+                		});                
+            });
+
+        	return defer.promise;
         }
 	}
 

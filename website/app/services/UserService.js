@@ -6,31 +6,83 @@ angular.module('VCA_WebApp')
 	// Felder: userId, first_name, groups[], last_name, role
 
     var firebaseDB = firebase.firestore();
-
     var firebaseRefString = 'application_data/users/';
+
     var _userId;
     var _userData;
     var _userAuthenticated = false;
+    var _newUser = false;
+    var _firstName, _lastName, _age, _role;
+    var _patients;
+
     var factory = this;
 
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+            // User is signed in.
+            console.log("user signed in:", user);
+            var email = user.email;
+            var emailVerified = user.emailVerified;
+            _userId = user.uid;
+            _userAuthenticated = true;
+            $rootScope.loggedIn = true;
+
+            if(_newUser){
+              factory.addUserToDatabase(_firstName, _lastName, _age, _role);
+            }
+            // get user informatin from database after login
+            factory.loadUserData(_userId).then(function(data){
+                console.log("user data fetched from db");
+                _role = data.role;
+                _firstName = data.fName;
+                _lastName = data.lName;
+            }); 
+            $rootScope.$broadcast('userLoggedIn', true);
+        } else {
+            // User is signed out.
+            _userAuthenticated = false;
+            $rootScope.loggedIn = false;
+            console.log("user signed out:");
+            $rootScope.$broadcast('userLoggedOut', true);
+
+        }
+    });
+
 	factory = {
+        isRegistered : false,
+        registerNewUser : function(email,password, firstName, lastName, age, role){
+            firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+              // Handle Errors here.
+              var errorCode = error.code;
+              var errorMessage = error.message;
+            });
+        _newUser = true;
+        _firstName = firstName;
+        _lastName = lastName;
+        _age = age;
+        _role = role;
+        },
         authenticateUser : function(email, password){
-            var defer = $q.defer();
             firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
                 // Handle Errors here.
                 // Reminder: mandy.reinhardt94@gmail.com test123
                 var errorCode = error.code;
-                var errorMessage = error.message;   
-                var _userAuthenticated = false;
-                return _userAuthenticated;   
+                var errorMessage = error.message;    
             });
-            _userAuthenticated = true;
-            $rootScope.loggedIn = true;
             return _userAuthenticated;
         },
+        logoutUser : function() {
+            // Sign out user
+            firebase.auth().signOut().catch(function(error) {
+               var errorCode = error.code;
+               var errorMessage = error.message;   
+             });
+        },
         getUserId : function(){
-            _userId = firebase.auth().currentUser.uid
             return _userId;
+        },
+        getUserRole : function(){
+            return _role;
         },
         loadUserData : function(userId){
             _userId = userId;
@@ -47,24 +99,39 @@ angular.module('VCA_WebApp')
             });
 
             return defer.promise;
+        },
+        loadPatients : function(){
+            var result = [];
+            var defer = $q.defer();
 
-            //_userId = userId;
-            //var defer = $q.defer();
-            //var ref = firebase.database().ref(firebaseRefString + userId);
-            //_userData = $firebaseObject(ref);
+            firebaseDB.collection("users").doc(_userId).collection("patients").get().then(function(querySnapshot) {
+                querySnapshot.forEach(function(doc) {
+                      console.log(doc.id, " => ", doc.data());
+                      result.push(doc.id);
+                });
+                _patients = result;
+                defer.resolve(_patients);
+            });
 
-            //_userData.$loaded().then(function(){
-            //    console.log("user data loaded");
-            //    defer.resolve(_userData);
-            //});
-
-            //return defer.promise;
+            return defer.promise;
+        },
+        addUserToDatabase : function(firstName, lastName, age, role){
+            firebaseDB.collection("users").doc(_userId).set({
+                fName: firstName,
+                lName: lastName,
+                role: role, 
+                age: age
+            })
+            .then(function() {
+                console.log("Document successfully written!");
+                $rootScope.$broadcast('newUserRegistered', _newUser);
+            })
+            .catch(function(error) {
+                console.error("Error writing document: ", error);
+            });
         },
         getUserData : function(){
             return _userData;
-        },
-        logout: function(){
-            _userAuthenticated = false;
         },
         getAuthenticated: function(){      
             if(_userAuthenticated==true)
@@ -72,9 +139,9 @@ angular.module('VCA_WebApp')
             else    
                 return false;
         },
-        getTestValue: function(){
-            return "test";
-        } 
+        getPatients : function(){
+            return _patients;
+        }
     }
 
     return factory;
