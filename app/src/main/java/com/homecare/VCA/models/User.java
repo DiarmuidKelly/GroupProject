@@ -6,6 +6,7 @@ import android.webkit.GeolocationPermissions;
 import java.util.Date;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.IgnoreExtraProperties;
 
 @IgnoreExtraProperties
@@ -19,6 +20,7 @@ public class User {
     public String role;
     public FirebaseAuth auth;
     public Geoposition geo;
+    public FirebaseUser fbUser;
     public String UID;
 
     //TODO Make user an interface for patient, carer, doctor
@@ -91,11 +93,12 @@ public class User {
         this.role = null;
         this.auth = null;
         this.UID = null;
-        this.geo = new Geoposition();
+        this.geo = null;
 
     }
 
     public void setLocation(Location location) {
+        this.geo = new Geoposition(UID);
         this.geo.setLocation(location);
     }
 
@@ -108,4 +111,8 @@ public class User {
     }
     public String getUID(){ return UID; }
     public Geoposition getGeo(){    return geo; }
+
+    public void setFBUser(FirebaseUser FBUser) {
+        this.fbUser = FBUser;
+    }
 }

@@ -2,6 +2,7 @@ package com.homecare.VCA.viewHolder;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -23,8 +24,15 @@ public class MainActivity extends BaseActivity {
         if(mAuth != null){
             localUser.setAuth(mAuth);
             if(currentUser != null) {
-                localUser.setEmail(currentUser.getEmail());
-                localUser.setUsername(currentUser.getDisplayName());
+                FirebaseUser user = mAuth.getCurrentUser();
+                localUser.setAuth(mAuth);
+                localUser.setEmail(user.getEmail());
+                localUser.setUsername(user.getDisplayName());
+                if(TextUtils.isEmpty((localUser.getEmail()))){
+                    localUser.setUsername(user.getEmail());
+                };
+                localUser.setUID(user.getUid());
+                localUser.setFBUser(user);
                 localUser.setSignedIn(true);
             }
         }

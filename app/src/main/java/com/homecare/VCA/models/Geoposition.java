@@ -15,23 +15,14 @@ public class Geoposition {
 
     private String userId;
     private String userName;
-    private double longitude;
-    private double latitude;
     private Location location;
     private @ServerTimestamp Date timestamp;
     public String lastUpdateTime;
 
     public Geoposition() {}
 
-    public Geoposition(FirebaseUser user, double lon, double lat) {
-        this.userId = user.getUid();
-        this.userName = user.getDisplayName();
-        if (TextUtils.isEmpty(this.userName)) {
-            this.userName = user.getEmail();
-        }
-
-        this.longitude = lon;
-        this.latitude = lat;
+    public Geoposition(String user) {
+        this.userId = user;
     }
 
     public void setLocation(Location location) {

@@ -194,9 +194,10 @@ public class Account extends BaseActivity {
         buildLocationSettingsRequest();
     }
 
-    private Task<Void> updateUserLocation(FirebaseFirestore mFirestore, DocumentReference mUserRef) {
+    private Task<Void> updateUserLocation() {
         if (mCurrentLocation != null) {
             localUser.setLocation(mCurrentLocation);
+            localUser.setLocationTime(mLastUpdateTime);
             final DocumentReference geoRef = this.mUserRef.collection("geoPosition").document();
             return this.mFirestore.runTransaction(new Transaction.Function<Void>() {
                 @Override
@@ -209,8 +210,7 @@ public class Account extends BaseActivity {
             });
         }
         if(mLastUpdateTime != "")
-        localUser.setLocationTime(mLastUpdateTime);
-
+            return null;
 
         return null;
     }
@@ -285,7 +285,7 @@ public class Account extends BaseActivity {
 
                 mCurrentLocation = locationResult.getLastLocation();
                 mLastUpdateTime = DateFormat.getTimeInstance().format(new Date());
-                updateUserLocation(mFirestore, mUserRef);
+                updateUserLocation();
                 updateLocationUI();
             }
         };
@@ -360,7 +360,6 @@ public class Account extends BaseActivity {
                         mFusedLocationClient.requestLocationUpdates(mLocationRequest,
                                 mLocationCallback, Looper.myLooper());
 
-                        updateUserLocation(mFirestore, mUserRef);
                         updateUI();
                     }
                 })

@@ -105,7 +105,11 @@ public class SignIn extends BaseActivity implements View.OnClickListener{
                             localUser.setAuth(mAuth);
                             localUser.setEmail(user.getEmail());
                             localUser.setUsername(user.getDisplayName());
+                            if(TextUtils.isEmpty((localUser.getEmail()))){
+                                localUser.setUsername(user.getEmail());
+                            };
                             localUser.setUID(user.getUid());
+                            localUser.setFBUser(user);
                             localUser.setSignedIn(true);
                             updateUI(user);
                         } else {
