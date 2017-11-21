@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/android-play-location-master/LocationUpdates/LocationUpdates.iml" filepath="$PROJECT_DIR$/android-play-location-master/LocationUpdates/LocationUpdates.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-play-location-master/LocationUpdates/app/LocationUpdates-app.iml" filepath="$PROJECT_DIR$/android-play-location-master/LocationUpdates/app/LocationUpdates-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/VCA.iml" filepath="$PROJECT_DIR$/VCA.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/VCA-app.iml" filepath="$PROJECT_DIR$/app/VCA-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android-play-location-master/android-play-location-master.iml" filepath="$PROJECT_DIR$/android-play-location-master/android-play-location-master.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firestore_example/firestore_example.iml" filepath="$PROJECT_DIR$/firestore_example/firestore_example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/firestore_example/app/firestore_example-app.iml" filepath="$PROJECT_DIR$/firestore_example/app/firestore_example-app.iml" />
+    </modules>
+  </component>
+</project>

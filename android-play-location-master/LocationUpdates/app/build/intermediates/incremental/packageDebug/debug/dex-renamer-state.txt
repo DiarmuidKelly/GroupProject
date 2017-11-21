@@ -1,0 +1,19 @@
+#Sat Nov 11 14:09:06 GMT 2017
+renamed.5=classes6.dex
+renamed.4=classes5.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.5=X\:\\3rd Year\\GroupProject\\VCA\\android-play-location-master\\LocationUpdates\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+base.4=X\:\\3rd Year\\GroupProject\\VCA\\android-play-location-master\\LocationUpdates\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
+base.3=X\:\\3rd Year\\GroupProject\\VCA\\android-play-location-master\\LocationUpdates\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
+base.2=X\:\\3rd Year\\GroupProject\\VCA\\android-play-location-master\\LocationUpdates\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+base.1=X\:\\3rd Year\\GroupProject\\VCA\\android-play-location-master\\LocationUpdates\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
+base.0=X\:\\3rd Year\\GroupProject\\VCA\\android-play-location-master\\LocationUpdates\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+file.5=X\:\\3rd Year\\GroupProject\\VCA\\android-play-location-master\\LocationUpdates\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11\\classes.dex
+file.4=X\:\\3rd Year\\GroupProject\\VCA\\android-play-location-master\\LocationUpdates\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16\\classes.dex
+file.3=X\:\\3rd Year\\GroupProject\\VCA\\android-play-location-master\\LocationUpdates\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15\\classes.dex
+file.2=X\:\\3rd Year\\GroupProject\\VCA\\android-play-location-master\\LocationUpdates\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14\\classes.dex
+file.1=X\:\\3rd Year\\GroupProject\\VCA\\android-play-location-master\\LocationUpdates\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13\\classes.dex
+file.0=X\:\\3rd Year\\GroupProject\\VCA\\android-play-location-master\\LocationUpdates\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12\\classes.dex

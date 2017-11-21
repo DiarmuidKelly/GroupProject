@@ -1,0 +1,191 @@
+-- Merging decision tree log ---
+manifest
+ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:19:1-41:12
+INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:19:1-41:12
+INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:19:1-41:12
+INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:19:1-41:12
+MERGED from [com.android.support:design:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\cf4c06a6ae24ef63897fbdadb8d27522\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\742c13b8ffe46706d3a25417463ebdc7\AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-location:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-location-11.0.0.aar\875c0d4d0711073f0190916a8aab4eb0\AndroidManifest.xml:2:1-5:12
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\cb8cafe18ae62cb365c130a268d322c8\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\dfcff90c5d71640b92221a35f4552a24\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\b71cec407765d7f0e7b9103f957209b6\AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:transition:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\d1fdf5319ee04d679bbfe7206a65f850\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.0.aar\915ba26222f48170d652114b98302ce3\AndroidManifest.xml:16:1-21:12
+MERGED from [com.google.android.gms:play-services-tasks:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.0.aar\bc9739299a1e54e075428ca866b3f106\AndroidManifest.xml:2:1-5:12
+MERGED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.0.aar\b4987c7dab096721297b1e075e6423fa\AndroidManifest.xml:16:1-23:12
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\6b105e71a9d72016dbb296a8785e1aae\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\3d78e49b921cfe973756f9d5fc76a8f1\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\16436d9d9b3be3deff57ca9371f1a75b\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\794feb62e81b2315afc60065e75aecb7\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\84928d1c6c096b2d821d04242d646299\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\34f524abae34e3b9f2c301cc5c03d33b\AndroidManifest.xml:17:1-31:12
+INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:19:1-41:12
+INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:19:1-41:12
+INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:19:1-41:12
+	package
+		ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:20:5-69
+		INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml
+		INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml
+		ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:19:1-41:12
+		INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml
+		ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:19:1-41:12
+		INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:19:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:22:5-78
+	android:name
+		ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:22:22-76
+application
+ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:24:5-40:19
+MERGED from [com.android.support:design:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\cf4c06a6ae24ef63897fbdadb8d27522\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\cf4c06a6ae24ef63897fbdadb8d27522\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\742c13b8ffe46706d3a25417463ebdc7\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\742c13b8ffe46706d3a25417463ebdc7\AndroidManifest.xml:29:5-20
+MERGED from [com.google.android.gms:play-services-location:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-location-11.0.0.aar\875c0d4d0711073f0190916a8aab4eb0\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-location:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-location-11.0.0.aar\875c0d4d0711073f0190916a8aab4eb0\AndroidManifest.xml:4:5-19
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\cb8cafe18ae62cb365c130a268d322c8\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\cb8cafe18ae62cb365c130a268d322c8\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\dfcff90c5d71640b92221a35f4552a24\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\dfcff90c5d71640b92221a35f4552a24\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\d1fdf5319ee04d679bbfe7206a65f850\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\d1fdf5319ee04d679bbfe7206a65f850\AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.0.aar\915ba26222f48170d652114b98302ce3\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.0.aar\915ba26222f48170d652114b98302ce3\AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.0.aar\bc9739299a1e54e075428ca866b3f106\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.0.aar\bc9739299a1e54e075428ca866b3f106\AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.0.aar\b4987c7dab096721297b1e075e6423fa\AndroidManifest.xml:19:5-21:19
+MERGED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.0.aar\b4987c7dab096721297b1e075e6423fa\AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\6b105e71a9d72016dbb296a8785e1aae\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\6b105e71a9d72016dbb296a8785e1aae\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\3d78e49b921cfe973756f9d5fc76a8f1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\3d78e49b921cfe973756f9d5fc76a8f1\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\16436d9d9b3be3deff57ca9371f1a75b\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\16436d9d9b3be3deff57ca9371f1a75b\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\794feb62e81b2315afc60065e75aecb7\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\794feb62e81b2315afc60065e75aecb7\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\84928d1c6c096b2d821d04242d646299\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\84928d1c6c096b2d821d04242d646299\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\34f524abae34e3b9f2c301cc5c03d33b\AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\34f524abae34e3b9f2c301cc5c03d33b\AndroidManifest.xml:29:5-20
+	android:label
+		ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:27:9-41
+	android:icon
+		ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:26:9-45
+	android:allowBackup
+		ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:25:9-35
+	android:theme
+		ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:28:9-52
+meta-data#com.google.android.gms.version
+ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:30:9-31:69
+MERGED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.0.aar\b4987c7dab096721297b1e075e6423fa\AndroidManifest.xml:20:9-121
+MERGED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.0.aar\b4987c7dab096721297b1e075e6423fa\AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:31:13-66
+	android:name
+		ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:30:20-65
+activity#com.google.android.gms.location.sample.locationupdates.MainActivity
+ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:32:9-39:20
+	android:label
+		ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:34:13-45
+	android:name
+		ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:33:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:35:13-38:29
+action#android.intent.action.MAIN
+ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:36:25-66
+category#android.intent.category.LAUNCHER
+ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:37:17-77
+	android:name
+		ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml:37:27-74
+uses-sdk
+INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml
+INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:design:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\cf4c06a6ae24ef63897fbdadb8d27522\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\cf4c06a6ae24ef63897fbdadb8d27522\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\742c13b8ffe46706d3a25417463ebdc7\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\742c13b8ffe46706d3a25417463ebdc7\AndroidManifest.xml:21:5-23:78
+MERGED from [com.google.android.gms:play-services-location:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-location-11.0.0.aar\875c0d4d0711073f0190916a8aab4eb0\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-location:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-location-11.0.0.aar\875c0d4d0711073f0190916a8aab4eb0\AndroidManifest.xml:3:5-43
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\cb8cafe18ae62cb365c130a268d322c8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\cb8cafe18ae62cb365c130a268d322c8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\dfcff90c5d71640b92221a35f4552a24\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\dfcff90c5d71640b92221a35f4552a24\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\b71cec407765d7f0e7b9103f957209b6\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\b71cec407765d7f0e7b9103f957209b6\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:transition:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\d1fdf5319ee04d679bbfe7206a65f850\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\d1fdf5319ee04d679bbfe7206a65f850\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.0.aar\915ba26222f48170d652114b98302ce3\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.0.aar\915ba26222f48170d652114b98302ce3\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.0.aar\bc9739299a1e54e075428ca866b3f106\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-tasks-11.0.0.aar\bc9739299a1e54e075428ca866b3f106\AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.0.aar\b4987c7dab096721297b1e075e6423fa\AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.0.0.aar\b4987c7dab096721297b1e075e6423fa\AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\6b105e71a9d72016dbb296a8785e1aae\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\6b105e71a9d72016dbb296a8785e1aae\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\3d78e49b921cfe973756f9d5fc76a8f1\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\3d78e49b921cfe973756f9d5fc76a8f1\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\16436d9d9b3be3deff57ca9371f1a75b\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\16436d9d9b3be3deff57ca9371f1a75b\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\794feb62e81b2315afc60065e75aecb7\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\794feb62e81b2315afc60065e75aecb7\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\84928d1c6c096b2d821d04242d646299\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\84928d1c6c096b2d821d04242d646299\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\34f524abae34e3b9f2c301cc5c03d33b\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\34f524abae34e3b9f2c301cc5c03d33b\AndroidManifest.xml:21:5-23:58
+INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml
+INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\cf4c06a6ae24ef63897fbdadb8d27522\AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml
+		ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml
+		INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml
+		ADDED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml
+		INJECTED from X:\3rd Year\GroupProject\VCA\android-play-location-master\LocationUpdates\app\src\main\AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\cf4c06a6ae24ef63897fbdadb8d27522\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\742c13b8ffe46706d3a25417463ebdc7\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\appcompat-v7-25.3.1.aar\742c13b8ffe46706d3a25417463ebdc7\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\cb8cafe18ae62cb365c130a268d322c8\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-25.3.1.aar\cb8cafe18ae62cb365c130a268d322c8\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\dfcff90c5d71640b92221a35f4552a24\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-25.3.1.aar\dfcff90c5d71640b92221a35f4552a24\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\b71cec407765d7f0e7b9103f957209b6\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-25.3.1.aar\b71cec407765d7f0e7b9103f957209b6\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\d1fdf5319ee04d679bbfe7206a65f850\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:transition:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\transition-25.3.1.aar\d1fdf5319ee04d679bbfe7206a65f850\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\6b105e71a9d72016dbb296a8785e1aae\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-v4:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-v4-25.3.1.aar\6b105e71a9d72016dbb296a8785e1aae\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\3d78e49b921cfe973756f9d5fc76a8f1\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-fragment-25.3.1.aar\3d78e49b921cfe973756f9d5fc76a8f1\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\16436d9d9b3be3deff57ca9371f1a75b\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-core-ui-25.3.1.aar\16436d9d9b3be3deff57ca9371f1a75b\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\794feb62e81b2315afc60065e75aecb7\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-media-compat-25.3.1.aar\794feb62e81b2315afc60065e75aecb7\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\84928d1c6c096b2d821d04242d646299\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-core-utils-25.3.1.aar\84928d1c6c096b2d821d04242d646299\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\34f524abae34e3b9f2c301cc5c03d33b\AndroidManifest.xml:25:5-27:34
+MERGED from [com.android.support:support-compat:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\support-compat-25.3.1.aar\34f524abae34e3b9f2c301cc5c03d33b\AndroidManifest.xml:25:5-27:34
+	android:value
+		ADDED from [com.android.support:design:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\cf4c06a6ae24ef63897fbdadb8d27522\AndroidManifest.xml:27:9-31
+	android:name
+		ADDED from [com.android.support:design:25.3.1] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\design-25.3.1.aar\cf4c06a6ae24ef63897fbdadb8d27522\AndroidManifest.xml:26:9-47
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.0.aar\915ba26222f48170d652114b98302ce3\AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.0.aar\915ba26222f48170d652114b98302ce3\AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.0.aar\915ba26222f48170d652114b98302ce3\AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.0.0] C:\Users\dok-1\.gradle\caches\transforms-1\files-1.1\play-services-base-11.0.0.aar\915ba26222f48170d652114b98302ce3\AndroidManifest.xml:19:19-85
