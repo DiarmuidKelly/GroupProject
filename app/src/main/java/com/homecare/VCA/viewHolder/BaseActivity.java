@@ -18,6 +18,8 @@ public class BaseActivity extends AppCompatActivity {
 
     protected static User localUser = new User();
 
+    public boolean lightState;
+
     public TextView mStatusTextView;
     public TextView mDetailTextView;
     public EditText mEmailField;
