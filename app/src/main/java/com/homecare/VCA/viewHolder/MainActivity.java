@@ -2,16 +2,29 @@ package com.homecare.VCA.viewHolder;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.homecare.VCA.R;
 import com.homecare.VCA.util.SignOut;
 
+import java.util.HashMap;
+
 public class MainActivity extends BaseActivity {
+
+    private static String TAG = MainActivity.class.getName();
+    private DocumentReference mUserRef;
+    private FirebaseFirestore mFirestore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +33,8 @@ public class MainActivity extends BaseActivity {
 
         final FirebaseUser currentUser = mAuth.getCurrentUser();
 
+        // Get firestore reference
+        mFirestore = FirebaseFirestore.getInstance();
 
         if(mAuth != null){
             localUser.setAuth(mAuth);
@@ -34,6 +49,39 @@ public class MainActivity extends BaseActivity {
                 localUser.setUID(user.getUid());
                 localUser.setFBUser(user);
                 localUser.setSignedIn(true);
+
+                // Get additional information from database
+                mUserRef = mFirestore.collection("users").document(localUser.getUID());
+                mUserRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<DocumentSnapshot> task) {
+                        if (task.isSuccessful()) {
+                            DocumentSnapshot document = task.getResult();
+                            if (document != null) {
+                                Log.d(TAG, "DocumentSnapshot data: " + task.getResult().getData());
+                                localUser.setRole((String) document.getData().get("role"));
+                                localUser.setLastName((String) document.getData().get("lName"));
+                                localUser.setFirstName((String) document.getData().get("fName"));
+                                localUser.setHeating((boolean) document.getData().get("heating"));
+                                localUser.setLights((boolean) document.getData().get("lights"));
+
+                                // get geofence object
+                                HashMap<String, Object> geoFence = (HashMap<String, Object>) document.getData().get("geoFence");
+                                localUser.setGeofenceObject(geoFence);
+                                localUser.setInsideGeofence((boolean) geoFence.get("insideGeofence"));
+                                localUser.setLongitude((double) geoFence.get("longitude"));
+                                localUser.setLatitude((double) geoFence.get("latitude"));
+                                localUser.setRadius((long) geoFence.get("radius"));
+                                Log.d(TAG, "local user: " + localUser.getRadius());
+
+                            } else {
+                                Log.d(TAG, "No such document");
+                            }
+                        } else {
+                            Log.d(TAG, "get failed with ", task.getException());
+                        }
+                    }
+                });
             }
         }
 

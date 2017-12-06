@@ -20,6 +20,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.location.GeofencingClient;
 import com.homecare.VCA.R;
 import com.homecare.VCA.BuildConfig;
 
@@ -69,6 +70,8 @@ public class Account extends BaseActivity {
     private FirebaseFirestore mFirestore;
     private DocumentReference mUserRef;
 
+    private GeofencingClient mGeofencingClient;
+    private long mGeoFenceRadius;
 
 
     private static final String TAG = MainActivity.class.getSimpleName();
@@ -186,6 +189,7 @@ public class Account extends BaseActivity {
 
         mFusedLocationClient = LocationServices.getFusedLocationProviderClient(this);
         mSettingsClient = LocationServices.getSettingsClient(this);
+        mGeofencingClient = LocationServices.getGeofencingClient(this);
 
         // Kick off the process of building the LocationCallback, LocationRequest, and
         // LocationSettingsRequest objects.
@@ -204,7 +208,6 @@ public class Account extends BaseActivity {
                 public Void apply(Transaction transaction) throws FirebaseFirestoreException {
                     // Commit to Firestore
                     transaction.set(geoRef, localUser.geo);
-
                     return null;
                 }
             });

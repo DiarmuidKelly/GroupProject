@@ -111,6 +111,7 @@ public class SignIn extends BaseActivity implements View.OnClickListener{
                             localUser.setUID(user.getUid());
                             localUser.setFBUser(user);
                             localUser.setSignedIn(true);
+
                             updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
