@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/mandy/group-project/VCA/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hy-rAM/values-hy-rAM.xml",
+            "map": [
+                {
+                    "source": "/home/mandy/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/439e8388f98d5ec0c425542ba5fd8f0f/res/values-hy-rAM/values-hy-rAM.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,161,281,403,524,619,706,801,910,1006,1100,1191,1287,1407,1522,1606,1692,1793,1908,1996",
+                        "endColumns": "105,119,121,120,94,86,94,108,95,93,90,95,119,114,83,85,100,114,87,92",
+                        "endOffsets": "156,276,398,519,614,701,796,905,1001,1095,1186,1282,1402,1517,1601,1687,1788,1903,1991,2084"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/mandy/group-project/VCA/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ur-rPK/values-ur-rPK.xml",
+            "map": [
+                {
+                    "source": "/home/mandy/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/439e8388f98d5ec0c425542ba5fd8f0f/res/values-ur-rPK/values-ur-rPK.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,160,270,388,504,604,695,786,894,993,1087,1185,1279,1394,1509,1598,1681,1777,1878,1962",
+                        "endColumns": "104,109,117,115,99,90,90,107,98,93,97,93,114,114,88,82,95,100,83,90",
+                        "endOffsets": "155,265,383,499,599,690,781,889,988,1082,1180,1274,1389,1504,1593,1676,1772,1873,1957,2048"
+                    }
+                }
+            ]
+        }
+    ]
+}

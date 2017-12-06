@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/mandy/group-project/VCA/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-pa-rIN/values-pa-rIN.xml",
+            "map": [
+                {
+                    "source": "/home/mandy/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/439e8388f98d5ec0c425542ba5fd8f0f/res/values-pa-rIN/values-pa-rIN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,152,260,376,489,589,679,770,876,974,1069,1165,1261,1374,1492,1575,1659,1747,1847,1932",
+                        "endColumns": "96,107,115,112,99,89,90,105,97,94,95,95,112,117,82,83,87,99,84,94",
+                        "endOffsets": "147,255,371,484,584,674,765,871,969,1064,1160,1256,1369,1487,1570,1654,1742,1842,1927,2022"
+                    }
+                }
+            ]
+        }
+    ]
+}

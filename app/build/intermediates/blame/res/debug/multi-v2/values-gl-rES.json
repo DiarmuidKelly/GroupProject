@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/mandy/group-project/VCA/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gl-rES/values-gl-rES.xml",
+            "map": [
+                {
+                    "source": "/home/mandy/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/439e8388f98d5ec0c425542ba5fd8f0f/res/values-gl-rES/values-gl-rES.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,159,269,381,496,597,681,780,887,984,1080,1175,1268,1389,1509,1593,1679,1770,1886,1973",
+                        "endColumns": "103,109,111,114,100,83,98,106,96,95,94,92,120,119,83,85,90,115,86,98",
+                        "endOffsets": "154,264,376,491,592,676,775,882,979,1075,1170,1263,1384,1504,1588,1674,1765,1881,1968,2067"
+                    }
+                }
+            ]
+        }
+    ]
+}

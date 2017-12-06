@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/mandy/group-project/VCA/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ne-rNP/values-ne-rNP.xml",
+            "map": [
+                {
+                    "source": "/home/mandy/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/439e8388f98d5ec0c425542ba5fd8f0f/res/values-ne-rNP/values-ne-rNP.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,152,254,359,471,574,668,761,867,972,1080,1181,1284,1393,1508,1597,1684,1780,1884,1971",
+                        "endColumns": "96,101,104,111,102,93,92,105,104,107,100,102,108,114,88,86,95,103,86,94",
+                        "endOffsets": "147,249,354,466,569,663,756,862,967,1075,1176,1279,1388,1503,1592,1679,1775,1879,1966,2061"
+                    }
+                }
+            ]
+        }
+    ]
+}

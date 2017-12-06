@@ -1,0 +1,4 @@
+#Wed Dec 06 15:41:27 GMT 2017
+base.0=/home/mandy/group-project/VCA/app/build/intermediates/transforms/dexMerger/debug/5
+path.0=classes.dex
+renamed.0=classes.dex

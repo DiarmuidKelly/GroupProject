@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Wed Dec 06 15:23:02 GMT 2017
+1.base=/home/mandy/group-project/VCA/firestore_example/app/build/intermediates/transforms/dexMerger/debug/0
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
+0.path=crashlytics-build.properties
+0.set=ASSET
+0.base=/home/mandy/group-project/VCA/firestore_example/app/build/intermediates/assets/debug
+1.path=classes.dex

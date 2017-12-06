@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/mandy/group-project/VCA/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-uz-rUZ/values-uz-rUZ.xml",
+            "map": [
+                {
+                    "source": "/home/mandy/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/439e8388f98d5ec0c425542ba5fd8f0f/res/values-uz-rUZ/values-uz-rUZ.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,164,276,392,506,605,711,808,923,1020,1115,1214,1306,1422,1534,1629,1714,1817,1928,2013",
+                        "endColumns": "108,111,115,113,98,105,96,114,96,94,98,91,115,111,94,84,102,110,84,96",
+                        "endOffsets": "159,271,387,501,600,706,803,918,1015,1110,1209,1301,1417,1529,1624,1709,1812,1923,2008,2105"
+                    }
+                }
+            ]
+        }
+    ]
+}

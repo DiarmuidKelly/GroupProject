@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/mandy/group-project/VCA/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-az-rAZ/values-az-rAZ.xml",
+            "map": [
+                {
+                    "source": "/home/mandy/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/439e8388f98d5ec0c425542ba5fd8f0f/res/values-az-rAZ/values-az-rAZ.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,157,263,370,487,585,675,774,878,976,1078,1178,1277,1390,1505,1592,1676,1771,1877,1963",
+                        "endColumns": "101,105,106,116,97,89,98,103,97,101,99,98,112,114,86,83,94,105,85,94",
+                        "endOffsets": "152,258,365,482,580,670,769,873,971,1073,1173,1272,1385,1500,1587,1671,1766,1872,1958,2053"
+                    }
+                }
+            ]
+        }
+    ]
+}

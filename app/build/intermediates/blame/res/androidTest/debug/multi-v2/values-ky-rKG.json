@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/mandy/group-project/VCA/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-ky-rKG/values-ky-rKG.xml",
+            "map": [
+                {
+                    "source": "/home/mandy/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/439e8388f98d5ec0c425542ba5fd8f0f/res/values-ky-rKG/values-ky-rKG.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,173,308,440,577,676,768,866,979,1075,1173,1265,1365,1471,1593,1680,1764,1871,1983,2068",
+                        "endColumns": "117,134,131,136,98,91,97,112,95,97,91,99,105,121,86,83,106,111,84,95",
+                        "endOffsets": "168,303,435,572,671,763,861,974,1070,1168,1260,1360,1466,1588,1675,1759,1866,1978,2063,2159"
+                    }
+                }
+            ]
+        }
+    ]
+}

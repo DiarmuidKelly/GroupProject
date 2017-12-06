@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/mandy/group-project/VCA/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ml-rIN/values-ml-rIN.xml",
+            "map": [
+                {
+                    "source": "/home/mandy/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/439e8388f98d5ec0c425542ba5fd8f0f/res/values-ml-rIN/values-ml-rIN.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,157,271,391,505,608,708,802,917,1018,1115,1212,1312,1426,1550,1645,1734,1835,1935,2023",
+                        "endColumns": "101,113,119,113,102,99,93,114,100,96,96,99,113,123,94,88,100,99,87,95",
+                        "endOffsets": "152,266,386,500,603,703,797,912,1013,1110,1207,1307,1421,1545,1640,1729,1830,1930,2018,2114"
+                    }
+                }
+            ]
+        }
+    ]
+}

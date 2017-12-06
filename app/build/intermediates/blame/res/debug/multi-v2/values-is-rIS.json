@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/mandy/group-project/VCA/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-is-rIS/values-is-rIS.xml",
+            "map": [
+                {
+                    "source": "/home/mandy/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/439e8388f98d5ec0c425542ba5fd8f0f/res/values-is-rIS/values-is-rIS.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,162,271,383,496,592,677,771,874,969,1063,1157,1249,1364,1475,1557,1639,1734,1837,1922",
+                        "endColumns": "106,108,111,112,95,84,93,102,94,93,93,91,114,110,81,81,94,102,84,90",
+                        "endOffsets": "157,266,378,491,587,672,766,869,964,1058,1152,1244,1359,1470,1552,1634,1729,1832,1917,2008"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/home/mandy/group-project/VCA/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-si-rLK/values-si-rLK.xml",
+            "map": [
+                {
+                    "source": "/home/mandy/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/439e8388f98d5ec0c425542ba5fd8f0f/res/values-si-rLK/values-si-rLK.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,156,268,380,495,586,667,760,858,954,1049,1146,1242,1358,1465,1557,1645,1743,1847,1934",
+                        "endColumns": "100,111,111,114,90,80,92,97,95,94,96,95,115,106,91,87,97,103,86,91",
+                        "endOffsets": "151,263,375,490,581,662,755,853,949,1044,1141,1237,1353,1460,1552,1640,1738,1842,1929,2021"
+                    }
+                }
+            ]
+        }
+    ]
+}
