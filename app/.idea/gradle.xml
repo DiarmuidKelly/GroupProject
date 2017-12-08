@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="C:\Program Files\Android\Android Studio\gradle\gradle-2.14.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/android-play-location-master" />
+            <option value="$PROJECT_DIR$/android-play-location-master/LocationUpdates" />
+            <option value="$PROJECT_DIR$/android-play-location-master/LocationUpdates/app" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/firestore_example" />
+            <option value="$PROJECT_DIR$/firestore_example/app" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

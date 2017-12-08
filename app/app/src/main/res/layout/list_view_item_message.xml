@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textViewUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="patient name"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="is currently inside the geofence."
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/textViewMessageDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="is currently inside the geofence."
+        android:textSize="10dp"
+        android:textStyle="italic"/>
+
+</LinearLayout>

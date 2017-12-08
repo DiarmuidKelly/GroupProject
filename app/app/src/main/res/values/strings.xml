@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Virtual Care Assistant</string>
+
+    <string name="label_emailpassword">Email/Password Authentication</string>
+    <string name="desc_emailpassword">Use an email and password to authenticate with Firebase.</string>
+
+    <string name="latitude_label">Latitude</string>
+    <string name="longitude_label">Longitude</string>
+    <string name="last_update_time_label">Last location update time</string>
+
+    <string name="hint_user_id">User ID</string>
+    <string name="get_custom_token">Get Token</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="create_account">Create Account</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="verify_email">Verify Email</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="loading">Loading…</string>
+    <string name="custom_token">Custom Token</string>
+    <string name="signed_in">Signed In</string>
+    <string name="signed_out">Signed Out</string>
+    <string name="token_null">Token: null</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_age">Age</string>
+    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="start_phone_auth">Start</string>
+    <string name="verify_phone_auth">Verify</string>
+    <string name="resend_phone_auth">Resend</string>
+    <string name="hint_phone_number">Phone Number</string>
+    <string name="hint_verification_code">Verification Code</string>
+    <string name="status_code_sent">Code Sent</string>
+    <string name="status_verification_failed">Verification failed</string>
+    <string name="status_verification_succeeded">Verification succeeded</string>
+    <string name="status_sign_in_failed">Sign-in failed</string>
+    <string name="instant_validation">(instant validation)</string>
+
+    <string name="firebase_status_fmt">Firebase User: %s</string>
+    <string name="firebase_user_management">Firebase User Management</string>
+
+    <string name="emailpassword_status_fmt">Email User: %1$s (verified: %2$b)</string>
+    <string name="emailpassword_title_text">Email and Password</string>
+
+    <string name="firebaseui_status_fmt">Firebase User: %s</string>
+    <string name="firebaseui_title_text">FirebaseUI Auth</string>
+
+    <string name="id_fmt">User ID: %s</string>
+    <string name="email_fmt">Email: %s</string>
+    <string name="virtual_care_assistant">Virtual Care Assistant</string>
+
+    <string name="start_updates">Start updates</string>
+    <string name="stop_updates">Stop updates</string>
+
+    <string name="location_settings_inadequate_warning">The location settings on the device are not
+        adequate to run this sample. Fix in Settings.</string>
+
+    <string name="permission_rationale">Location permission is needed for core functionality</string>
+    <string name="permission_denied_explanation">Permission was denied, but is needed for core
+        functionality.</string>
+    <string name="settings">Settings</string>
+    
+    <string name="geofence_transition_invalid_type">Invalid transition</string>
+    <string name="geofence_notification_title">Postion change registered!</string>
+    <string name="geofence_transition_notification_text_exit"> You have exited the geofence area. </string>
+    <string name="geofence_transition_notification_text_enter"> You are inside the geofence area again. </string>
+    <string name="create_user_role">What kind of user do you want to register?</string>
+    <string name="role_caretaker">Caretaker</string>
+    <string name="role_patient">Patient</string>
+    <string name="additional_info">Please provide additional information</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="set_up_geofence">Set up a geofence?</string>
+    <string name="radius">Radius</string>
+    <string name="geofence_info">Your current position will be used as the center for the geofence.</string>
+    <string name="create_new_user">Create user</string>
+    <string name="create_user_header">Create user</string>
+    <string name="patient_pin">Patient PIN</string>
+    <string name="management_view">Management</string>
+    <string name="generatedPIN">Generated PIN: </string>
+    <string name="generateNewPIN">Generate new PIN</string>
+    <string name="listOfPatients">List of associated patients</string>
+    <string name="heating">Heating</string>
+    <string name="lights">Lights</string>
+    <string name="lastLocation">Show last location</string>
+</resources>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/textViewPatientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="patient name"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewGeofenceOutIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="is currently inside the geofence."
+        android:textSize="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textViewPatientHeating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="@string/heating" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switchPatientHeating"
+            style="git.exe@android:style/Widget.Holo.Light.CompoundButton.Switch"
+            android:switchMinWidth="60dip"
+            android:checked="false"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewPatientLights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:text="@string/lights" />
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/switchPatientLight"
+            style="git.exe@android:style/Widget.Holo.Light.CompoundButton.Switch"
+            android:switchMinWidth="60dip"
+            android:checked="false"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonShowLastLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lastLocation"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>
