@@ -1,0 +1,28 @@
+<div class="container-fluid" ng-controller="RegisterCtrl">
+	<div class="row">
+		<div class="col-md-4"></div>
+	  	<div class="col-md-4">
+			<h1>Virtual Care Assistant</h1>
+	  	</div>
+	 	<div class="col-md-4"></div>
+	</div>
+	<div class="row">
+	  <div class="col-md-4"></div>
+	  <div class="col-md-4">
+		  <form role="form">
+			<input type="email" class="form-control" placeholder="Email address" required="" autofocus="" ng-model="email">
+			<input type="password" class="form-control" placeholder="Password" required="" ng-model="password">	
+			<input type="password" class="form-control" placeholder="Repeat Password" required="" ng-model="password2">	
+			<br>
+			<input type="text" class="form-control" placeholder="First name" required="" ng-model="firstName">	
+			<input type="text" class="form-control" placeholder="Last name" required="" ng-model="lastName">
+			<input type="text" class="form-control" placeholder="Age" required="" ng-model="age">
+			<br>
+			<input type="text" class="form-control" placeholder="Patient PIN" required="" ng-model="patientPIN">
+			<button class="btn btn-lg btn-primary btn-block" ng-click="register()" type="submit">Register</button>
+
+		 </form>
+	 </div>
+	 <div class="col-md-4"></div>
+	</div>
+</div>

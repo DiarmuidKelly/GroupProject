@@ -1,0 +1,28 @@
+{
+  "uid": "jVr9W7VW6NU8LhX0wjT0A5LUcZk1",
+  "displayName": null,
+  "photoURL": null,
+  "email": "mandy.reinhardt94@gmail.com",
+  "emailVerified": false,
+  "phoneNumber": null,
+  "isAnonymous": false,
+  "providerData": [
+    {
+      "uid": "mandy.reinhardt94@gmail.com",
+      "displayName": null,
+      "photoURL": null,
+      "email": "mandy.reinhardt94@gmail.com",
+      "providerId": "password"
+    }
+  ],
+  "apiKey": "AIzaSyAOdUdLb-UdCw4pDx_I9XlyO7x0SNaUW3Q",
+  "appName": "[DEFAULT]",
+  "authDomain": "group-project-ff2d3.firebaseapp.com",
+  "stsTokenManager": {
+    "apiKey": "AIzaSyAOdUdLb-UdCw4pDx_I9XlyO7x0SNaUW3Q",
+    "refreshToken": "APWA_koHwCiu7t95agaWXT2sucLyFO2vEf4vkItxcEVmfwp7e0FPLUHgz1-1SxVs0XtDXoKIVIdL1ekAFxP4SqVzVfKgaKT7oYUrQjpMooc9oq6IWKfSa8Rzov53o-ec1MHsCg35iDwd6KrhQ36tQCIC-U1y3Ai8lPS75pd58NPpeRv_Bq3fp1TLnuNepgpMPfiyJHfw1dP0TQkYGxZbbtUW153fiu0IreTOnE41mrSHEA9HFVIz4k0",
+    "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjcwMjg1ZDBiMzYzZGZlNTdhODJhYjFkNTI0NWM3OTAxZDMwNTM4MmYifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vZ3JvdXAtcHJvamVjdC1mZjJkMyIsImF1ZCI6Imdyb3VwLXByb2plY3QtZmYyZDMiLCJhdXRoX3RpbWUiOjE1MDgxNzk2NTMsInVzZXJfaWQiOiJqVnI5VzdWVzZOVThMaFgwd2pUMEE1TFVjWmsxIiwic3ViIjoialZyOVc3Vlc2TlU4TGhYMHdqVDBBNUxVY1prMSIsImlhdCI6MTUwODE3OTY1MywiZXhwIjoxNTA4MTgzMjUzLCJlbWFpbCI6Im1hbmR5LnJlaW5oYXJkdDk0QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiZmlyZWJhc2UiOnsiaWRlbnRpdGllcyI6eyJlbWFpbCI6WyJtYW5keS5yZWluaGFyZHQ5NEBnbWFpbC5jb20iXX0sInNpZ25faW5fcHJvdmlkZXIiOiJwYXNzd29yZCJ9fQ.P1nX6HwvC-YAqGhmcN6d5WZd-6utedW5UENHCPkTkN9MqtMq5Cn764mXI9-b4yKywMP7jwIHDf_XekTNDq_jjQWSUWodjsFxLhfY32z2mwwlB5wpEUle84EhBiTBukcHSg2rHSAeU9OgdsGteaYbourQugNxXFHD4uCtjAWxCJrp-XgLam99iret_11R_D214VWFj99L138jjjfdNX0PjwFHIxaG7oN33kBaSjIHFwceQyk521rsAvTSr5OW3RFV_0N-YZVken-TB2G7_2W11fFG8Ib_7Tq5hsrObfP8Oaqea4U8rDc23yZnvvo7MJsayrAi2q9065eleCWSpw5N9g",
+    "expirationTime": 1508183252565
+  },
+  "redirectEventId": null
+}

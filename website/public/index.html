@@ -1,0 +1,79 @@
+<html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="VCA_WebApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="VCA_WebApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="VCA_WebApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="VCA_WebApp" class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Virtual Care Assistant</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+    <link rel="stylesheet" href="app.css">
+    <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+    <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet"> 
+
+    <!-- Datetime picker files -->
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+    <script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js">
+      </script>
+    <link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+
+  </head>
+
+  <body ng-app="VCA_WebApp" ng-controller="VCA_WebAppCtrl">
+
+    <div ng-include="'templates/header.html'" ng-if="$root.loggedIn && $root.roleDetermined" ng-controller="HeaderCtrl"></div>
+    <div ng-view></div>  
+      
+      <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-auth.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase-firestore.js"></script>
+
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyAOdUdLb-UdCw4pDx_I9XlyO7x0SNaUW3Q",
+          authDomain: "group-project-ff2d3.firebaseapp.com",
+          databaseURL: "https://group-project-ff2d3.firebaseio.com",
+          projectId : "group-project-ff2d3"
+        };
+        firebase.initializeApp(config);
+
+        var firestoreDB = firebase.firestore();   
+      </script>
+      
+      <script src="bower_components/angular/angular.js"></script>
+      <script src="bower_components/angular-route/angular-route.js"></script>
+
+      <!-- AngularFire -->
+      <script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
+      <!-- Google maps -->
+      <script src="https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js"></script>
+
+      <!-- Initialize my app components here --> 
+      <script src="app.js"></script>
+      <script src="services/UserService.js"></script>
+      <script src="services/PatientsService.js"></script>
+      <script src="services/MessageService.js"></script>
+      <script src="appCtrl.js"></script>
+      <script src="templates/header.js"></script>
+      <script src="landingPage/landingPage.js"></script>
+      <script src="register/register.js"></script>
+      <script src="messageBoard/messageBoard.js"></script>
+      <script src="searchResults/searchResults.js"></script>
+      <script src="start/start.js"></script>
+      <script src="detailViewElderly/detailViewElderly.js"></script>
+      <script src="components/version/version.js"></script>
+      <script src="components/version/version-directive.js"></script>
+      <script src="components/version/interpolate-filter.js"></script>
+
+  </body>
+</html>

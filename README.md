@@ -24,6 +24,16 @@ Product and Sprint Backlog
 Link to Google Sheet
 https://docs.google.com/spreadsheets/d/1-7OTmDDf3AV2LdaKmMwGqvl10lFIMPldz6HxQw08N9k/edit?usp=sharing
 
+**************************
+Test Data in Firebase: 
+**************************
+
+Employee Login: 
+employee@email.ie - test123
+
+Relative Login:
+relative@email.ie - test123
+
 ***********
 Other: 
 ***********
