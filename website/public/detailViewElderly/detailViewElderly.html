@@ -1,0 +1,110 @@
+<div class="container" ng-controller="DVECtrl">
+        <div class="page-header">
+            <h1>{{patientData.fName}} {{patientData.lName}}</h1>   
+        </div>
+
+        <div ng-if="insideGeofence" class="alert alert-success" role="alert">{{patientData.fName}} {{patientData.lName}} is currently inside the geofence.</div>
+
+        <div ng-if="!insideGeofence"class="alert alert-danger" role="alert">{{patientData.fName}} {{patientData.lName}} is currently outside the geofence! </div>
+        
+        <!-- First row containing the map of current position and house conditions -->            
+         <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              
+               <div id="map"></div>
+
+            </div> 
+            <div class="col-sm-6 col-md-6 col-lg-6">
+
+              <h2>Settings</h2>
+
+               <table>
+                  <tr><td>
+                    <label class="switch">
+                      <input type="checkbox" ng-model="lights">
+                      <span class="slider round" ng-click=""></span>
+                    </label> 
+                  </td>
+                  <td> </td>
+                  <td> Lights</td>
+                </tr>
+                <tr>
+                  <td>
+                    <label class="switch">
+                      <input type="checkbox" ng-model="heating">
+                      <span class="slider round" ng-click=""></span>
+                    </label>
+                  </td>
+                   <td> </td>
+                  <td> Heating </td>
+                </tr>
+              </table>
+
+              <p>
+                <form role="form-inline"> 
+                  Current geofence radius
+                  <input type="text" ng-model="formData.geofenceRadius">
+                  <button class="btn btn-default" type="submit" ng-click="setGeofence()">Set geofence</button>
+                </form>
+              </p>
+            </div>
+         </div>
+        
+        <!-- Second row containing caretakers and appointments -->  
+        <div class="row" style="margin-top:20px;">
+            <div class="col-sm-12 col-md-12">
+
+                <h2>Associated caretakers</h2>
+
+                <div class="list-group">
+                  <div ng-repeat="c in caretakers" class="list-group-item" href="//"> 
+                    {{c.fName}} {{c.lName}}
+                  </div>
+                </div>
+            </div>
+          </div>
+
+           <div class="row" style="margin-top:20px;">
+            <div class="col-sm-6 col-md-6">
+               
+                <h2>Upcoming Appointments</h2> 
+
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Appointment</th>
+                        <th>Date & Time</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr ng-repeat="e in events">
+                        <td>{{e.eventName}}</td>
+                        <td>{{e.eventTime}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                
+            </div>
+             <div class="col-sm-6 col-md-6">
+              <h2>Add a new appointment</h2>
+
+              <div role="form my-2 my-lg-0">
+                <div class='form-control'> Appointment name: <input type="text" ng-model="formData.appointmentName"></div>
+                <div class='form-control'> Appointment location: <input type="text" ng-model="formData.appointmentLocation"></div>
+                <div class='input-group date' id='datetimepicker1'>
+                    Date: <input type='text' class="form-control"/>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+                
+                <button class="btn btn-default" type="submit" ng-click="addAppointment()">Add appointment</button>
+
+              </div>
+
+                
+             </div>
+        </div>
+        
+        
+    </div>

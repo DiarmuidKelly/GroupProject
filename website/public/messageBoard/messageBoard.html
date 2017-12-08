@@ -1,0 +1,55 @@
+<div class="container" ng-controller="MessageBoardCtrl">
+	<h1>Message Boards for all patients you are associated with</h1>
+		<div id="messageBoard">
+		 <div class="row">
+
+		 	<!-- List of available chats-->
+	        <div class="col-sm-3 col-md-3" id="messageBoardListChats">
+	        	 <div class="list-group">
+	        	 	<h3>Chats</h3>
+                    <div ng-repeat="p in patients" ng-click="openChat(p.messageBoard)" class="list-group-item"> 
+                      {{p.fName}} {{p.lName}} <br>
+                    </div>
+                  </div>
+	        </div>
+
+	        <!-- List of available chats-->
+	        <div class="col-sm-9 col-md-9">
+	        	<div id="chats">
+				  	<div class="row">
+				  		 <div class="col-sm-9 col-md-9"> 
+				  		 	<div id="chatArea">
+				  		 		<div ng-if="!messages">{{chatStatus}}</div>
+				  		 		<p ng-repeat="msg in messages" class="chatMessage">
+				  		 			<b>{{msg.fromUserName}}:</b> {{msg.msgText}} <br>
+				  		 			<span class="chatTimestamp">({{msg.sent}})</span>
+				  		 		</p>
+				  		 	</div>
+				  		 	<div ng-if="messages" class="formNewMessage"> 
+				  		 		<form class="form-inline"> 
+				  		 			<div class="form-group row">
+				  		 				<div class="col-sm-9 col-md-9">
+							                <input class="form-control" placeholder="Type message here ..." 
+							                		type="text" ng-model="formData.newMsg">
+						                </div>
+						                <div class="col-sm-3 col-md-3">
+						                	<button class="btn" type="submit" ng-click="addMessage()">Send</button>
+						            	</div>
+					            	</div>
+				                </form>
+				  		 	</div>
+				  		 </div>
+				  		 <div class="col-sm-3 col-md-3"> 
+				  		 	<div class="chatMembers">
+				  		 		<h3>Chat members</h3>
+			                    <p ng-repeat="m in members"> 
+			                      {{m.fName}} {{m.lName}}
+			                    </p>
+			                  </div>
+				  		 </div>
+				  	</div>
+				</div>
+	        </div>
+	     </div>
+	</div>
+</div>
